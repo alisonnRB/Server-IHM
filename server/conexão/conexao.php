@@ -2,7 +2,7 @@
 function conecta_bd()
 {
     // Configurações do PostgreSQL no Render
-    $host = 'dpg-cva3upij1k6c739eiv6g-a'; // Host do Render
+    $host = 'dpg-cva3upij1k6c739eiv6g-a.oregon-postgres.render.com'; // Host do Render
     $port = '5432'; // Porta padrão do PostgreSQL
     $dbname = 'ihm_database'; // Nome do banco de dados
     $user = 'ihm_database_user'; // Usuário do banco
