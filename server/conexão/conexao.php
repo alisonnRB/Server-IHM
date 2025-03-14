@@ -2,11 +2,11 @@
 function conecta_bd()
 {
     // Configurações do PostgreSQL no Render
-    $host = 'dpg-cu8kbdaj1k6c73a002og-a.oregon-postgres.render.com'; // Host do Render
+    $host = 'dpg-cv a3upij1k6c739eiv6g-a.oregon-postgres.render.com'; // Host do Render
     $port = '5432'; // Porta padrão do PostgreSQL
-    $dbname = 'ihm_database'; // Nome do banco de dados
-    $user = 'ihm_database_user'; // Usuário do banco
-    $password = '6VH0P3ugUBq22ReQZMGWv1Fxk8pMufEj'; // Senha do banco
+    $dbname = 'ihm_database_hj0b'; // Nome do banco de dados
+    $user = 'ihm_database_hj0b_user'; // Usuário do banco
+    $password = 'W0xFFuLHLvCAsDHTUmc1IvE5mu4syt0m'; // Senha do banco
 
     try {
         // DSN para PostgreSQL

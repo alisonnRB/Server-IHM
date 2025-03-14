@@ -21,7 +21,7 @@ if (!$token || $token == "erro") {
 function reportar($id, $reporte, $livro)
 {
     $conexao = conecta_bd();
-    $stmt = $conexao->prepare("SELECT user FROM reporte WHERE user = :user AND livro = :livro");
+    $stmt = $conexao->prepare("SELECT user_id FROM reporte WHERE user = :user AND livro = :livro");
     $stmt->bindParam(":user", $id);
     $stmt->bindParam(":livro", $livro);
     $stmt->execute();
