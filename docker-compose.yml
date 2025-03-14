@@ -7,11 +7,11 @@ services:
     depends_on:
       - db # Garante que o banco inicie antes da aplicação
     environment:
-      - DB_HOST=dpg-cu8kbdaj1k6c73a002og-a
+      - DB_HOST=dpg-cva3upij1k6c739eiv6g-a
       - DB_PORT=5432
-      - DB_NAME=ihm_database
-      - DB_USER=ihm_database_user
-      - DB_PASSWORD=6VH0P3ugUBq22ReQZMGWv1Fxk8pMufEj
+      - DB_NAME=ihm_database_hj0b
+      - DB_USER=ihm_database_hj0b_user
+      - DB_PASSWORD=W0xFFuLHLvCAsDHTUmc1IvE5mu4syt0m
   db:
     image: postgres:15
     restart: always
