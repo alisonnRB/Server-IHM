@@ -1,0 +1,49 @@
+.caixaCap{
+    width: 74.5%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+}
+.caixaCap input{
+    margin-top: 100px;
+    border: none;
+    border-bottom: 1px solid var(--borda);
+    height: 35%;
+    min-width: 20%;
+    font-size: 2em;
+    font-weight: 1000;
+    color: var(--letra-g);
+    background-color: var(--background);
+}
+.content-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+@media (max-width: 577px) and (orientation: landscape) {
+    .caixaMais {
+        top: 31%;
+    }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+    .content-page{
+        margin-top: 100px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+    .content-page{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .caixaCap input{
+        position: relative;
+        left: 345px;
+    }
+}
+

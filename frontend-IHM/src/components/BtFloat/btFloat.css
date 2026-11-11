@@ -1,0 +1,433 @@
+.fab {
+    position: fixed;
+    z-index: 50;
+}
+
+.fab ul,
+.fab ul li {
+    pointer-events: none;
+}
+
+.fab.show ul,
+.fab.show ul li {
+    pointer-events: fill;
+}
+
+/* */
+.fab button {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #087F97;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+    font-size: 24px;
+    color: white;
+
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+#opcao1 {
+    background-image: url('../../imgs/livroBranco.png');
+}
+
+#opcao2 {
+    background-image: url('../../imgs/publica.png');
+}
+
+#opcao1,
+#opcao2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+}
+
+.fab button:focus {
+    outline: none;
+}
+
+.fab button.main {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #13505c;
+    right: 30px;
+    bottom: 20px;
+    z-index: 20;
+}
+
+.fab button.main:before {
+    font-size: 2em;
+    content: '+';
+}
+
+.fab ul {
+    position: absolute;
+    right: 46.3px;
+    bottom: 40px;
+    padding: 0;
+    padding-right: 5px;
+    margin: 0;
+    list-style: none;
+    z-index: 10;
+
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.fab ul li {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+.fab ul li label {
+    margin-right: 10px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    padding: 5px 8px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    height: 18px;
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0;
+
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.fab.show button.main,
+.fab.show button.main {
+    outline: none;
+    background-color: #087F97;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}
+
+.fab.show button.main:before,
+.fab.show button.main:before {
+    font-size: 1em;
+    content: '−';
+}
+
+.fab.show button.main+ul,
+.fab.show button.main+ul {
+    bottom: 120px;
+}
+
+.fab.show button.main+ul li,
+.fab.show button.main+ul li {
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+.fab.show button.main+ul li:hover label,
+.fab.show button.main+ul li:hover label {
+    opacity: 1;
+}
+
+
+@media (max-width: 576px){
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .fab {
+        top: 140px;
+        left: 100px;
+    }
+
+    .fab ul {
+        right: 46.3px;
+        bottom: -10px;
+    }
+
+    .fab button.main {
+        width: 60px;
+        height: 60px;
+        font-size: 1em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 35px;
+        width: 35px;
+    }
+
+    #opcao1,
+    #opcao2 {
+        background-size: 18px 18px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: -95px;
+    }
+
+    .fab ul li label {
+        display: none;
+    }
+
+}
+@media (max-width: 576px) and (orientation: landscape){
+ 
+    .fab button.main {
+        right: -455px;
+    }
+
+    .fab ul {
+        right: -447px;
+        bottom: -10px;
+    }
+
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait){
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+    .fab {
+        top: 150px;
+        left: 140px;
+    }
+
+    .fab ul {
+        right: 51.5px;
+        bottom: -10px;
+    }
+
+    .fab button.main {
+        width: 80px;
+        height: 80px;
+        font-size: 1.7em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 45px;
+        width: 45px;
+    }
+
+    #opcao1,
+    #opcao2 {
+        background-size: 25px 25px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: -110px;
+    }
+
+    .fab ul li label {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape){
+    .fab {
+        position: absolute;
+        top: 140px;
+        right: -10px;
+    }
+
+    .fab ul {
+        right: 46.5px;
+        bottom: -10px;
+    }
+
+    .fab button.main {
+        width: 65px;
+        height: 65px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 35px;
+        width: 35px;
+    }
+
+    #opcao1,
+    #opcao2 {
+        background-size: 22px 22px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: -90px;
+    }
+
+    .fab ul li label {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+    .fab {
+        top: 175px;
+        left: 140px;
+    }
+
+    .fab ul {
+        right: 51.5px;
+        bottom: -10px;
+    }
+
+    .fab button.main {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 45px;
+        width: 45px;
+    }
+
+    #opcao1,
+    #opcao2 {
+        background-size: 25px 25px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: -110px;
+    }
+
+    .fab ul li label {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    .fab {
+        position: absolute;
+        top: 175px;
+        right: -10px;
+    }
+
+    .fab ul {
+        right: 51.5px;
+        bottom: -10px;
+    }
+
+    .fab button.main {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 45px;
+        width: 45px;
+    }
+
+    #opcao1,
+    #opcao2 {
+        background-size: 25px 25px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: -110px;
+    }
+
+    .fab ul li label {
+        display: none;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: landscape){
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .fab {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .fab button.main {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 45px;
+        width: 45px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: 100px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .fab {
+        bottom: 100px;
+        right: 5px;
+    }
+
+    .fab button.main {
+        width: 90px;
+        height: 90px;
+        font-size: 1.5em;
+        border-radius: 100%;
+        right: 35px;
+    }
+
+    .fab button {
+        height: 55px;
+        width: 55px;
+    }
+
+    .fab.show button.main+ul,
+    .fab.show button.main+ul {
+        bottom: 120px;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    /* Estilos para dispositivos desktop (telas maiores) */
+    .fab {
+        bottom: 5px;
+        right: 5px;
+    }
+
+}
+
+@media (orientation: portrait) {
+    .fab {
+        position: absolute;
+    }
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+
+}

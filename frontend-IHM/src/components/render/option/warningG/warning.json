@@ -1,0 +1,17 @@
+{
+    "en": {
+        "confirmar": "Are you sure you want to delete your account?",
+        "cancelar": "CANCEL",
+        "excluir": "DELETE"
+    },
+    "pt": {
+        "confirmar": "Tem certeza que quer excluir a conta?",
+        "cancelar": "CANCELAR",
+        "excluir": "EXCLUIR"
+    },
+    "es": {
+        "confirmar": "¿Estás seguro de que quieres eliminar tu cuenta?",
+        "cancelar": "CANCELAR",
+        "excluir": "ELIMINAR"
+    }
+}

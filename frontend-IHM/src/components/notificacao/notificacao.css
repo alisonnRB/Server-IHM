@@ -1,0 +1,133 @@
+.content-notifica{
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    z-index: 200;
+    right: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content-notifica img{
+    height: 70%;
+    width: 70%;
+    object-fit: fill;
+}
+
+.fundo-notifica{
+    background-color: var(--filtro);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-notifica{
+    background-color: var(--dell-publi);
+    height: 80vh;
+    width: 30vw;
+    border-radius: 30px;
+    display: block;
+}
+
+.title-notifica{
+    height: 10%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 5%;
+}
+
+.cards-notifica{
+    height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-notifica::-webkit-scrollbar{
+    width: 5px;
+}
+
+.not-cot{
+    height: 15px;
+    width: 15px;
+    margin-left: -15px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    bottom: 45%;
+    left: 25%;
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+    .box-notifica{
+        height: 80vh;
+        width: 80vw;
+    }
+
+    .content-notifica{
+        background-color: black;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 35px;
+        position: fixed;
+        z-index: 200;
+        right: 30px;
+        margin-top: 30px;
+        top: 37px;
+        left: 82px;
+        cursor: pointer;
+    }
+
+}
+
+@media(max-width: 1200px) and (orientation: landscape) {
+    .content-notifica{
+        padding: 5px;
+        margin-top: -113px;
+    }
+    .box-notifica {
+        background-color: black;
+        height: 80vh;
+        width: 70vw;
+        border-radius: 30px;
+        display: block;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1180px) and (orientation: portrait) {
+    .content-notifica{
+        left: 120px;
+        top: 65px;
+    }
+    
+    .box-notifica{
+        width: 600px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1368px) and (orientation: portrait){
+    .content-notifica{
+        right: 150px;
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "en": {
+        "neWcap": "NEW CHAPTER",
+        "message1": "Do you really want to delete this chapter??",
+        "message2": "It will be impossible to recover it!!",
+        "ss": "YES",
+        "n": "NO",
+        "sinopse": "SYNOPSIS",
+        "pronto": "ready"
+    },
+    "pt": {
+        "neWcap": "NOVO CAPÍTULO",
+        "message1": "Você realmente quer excluir esse capítulo??",
+        "message2": "Será impossível recuperá-lo!!",
+        "ss": "SIM",
+        "n": "NÃO",
+        "sinopse": "SINOPSE",
+        "pronto": "pronto"
+    },
+    "es": {
+        "neWcap": "NUEVO CAPITULO",
+        "message": "¿¿De verdad quieres eliminar este capitulo??",
+        "message2": "¡¡Será imposible recuperarlo!!",
+        "ss": "SI",
+        "n": "NO",
+        "sinopse": "SINOPSIS",
+        "pronto": "listo"
+    }
+}

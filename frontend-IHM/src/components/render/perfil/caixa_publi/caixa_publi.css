@@ -1,0 +1,21 @@
+.boxMeuPubli {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+}
+
+.MyPosts{
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 100%;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}

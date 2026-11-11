@@ -1,0 +1,207 @@
+.TelaBusca {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.TelaBusca #titlePerfil {
+    margin: auto;
+    margin-bottom: -100px;
+    width: 300px;
+}
+
+.TelaBusca .boxLivros #searchText {
+    width: 74%;
+    background-color: var(--barra-busca);
+    color: var(--letra);
+}
+
+.TelaBusca .searchUSER {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.TelaBusca .pessoasBOX {
+    width: 100%;
+    min-height: 80%;
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.BoxCardPessoas {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+
+    animation: surge 2s ease;
+}
+
+
+.cardPessoa {
+    padding-top: 10px;
+    height: 100%;
+    width: 80%;
+    border-bottom: solid 1px #B2B2B2;
+}
+
+.cardPessoa #perfilPessoa {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardPessoa #perfilPessoa img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.cardPessoa .infosPessoa {
+    height: 100%;
+    width: 100%;
+}
+
+.cardPessoa .infosPessoa .nomePessoa {
+    height: 30%;
+    align-items: center;
+    font-weight: 2em;
+    font-size: 1.3em;
+    color: var(--letra);
+}
+
+.cardPessoa .infosPessoa .nomePessoa {
+    height: 40%;
+    align-items: center;
+}
+
+#searchImg.dark{
+    background-image: url('../../../imgs/lupa-dark.png');
+}
+
+.cardPessoa .infosPessoa .catPessoa {
+    height: 60%;
+}
+
+.cardPessoa .infosPessoa .catPessoa .categoria {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    color: var(--letra);
+}
+
+.cardPessoa .infosPessoa .catPessoa .opSeguir {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: start;
+    color: var(--letra-g);
+}
+
+.cardPessoa .infosPessoa .catPessoa .opSeguir p {
+    cursor: pointer;
+}
+
+#medalhaC {
+    height: 20px;
+    width: 40px;
+}
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+
+    .TelaBusca #titlePerfil {
+        display: none;
+    }
+
+    .cardPessoa .infosPessoa .catPessoa .categoria {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+
+    .TelaBusca #titlePerfil {
+        display: none;
+    }
+
+    .cardPessoa .infosPessoa .catPessoa .categoria {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .TelaBusca #titlePerfil {
+        display: none;
+    }
+
+    .cardPessoa .infosPessoa .catPessoa .categoria{
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .TelaBusca #titlePerfil {
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    /*estilo pra computadores com até 1920px*/
+    .TelaBusca #titlePerfil {
+         
+        margin-bottom: -100px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    .TelaBusca #titlePerfil {
+        margin-bottom: -100px;
+        width: 300px;
+    }
+
+
+}
+
+
+@media (max-width: 1600px) and (min-width: 1366px) {
+    .TelaBusca #titlePerfil {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape){
+    #notMore {
+        font-size: 2em;
+    }
+    #notFound {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) and (orientation: landscape){
+    #notMore {
+        font-size: 4em;
+    }
+    #notFound {
+        font-size: 4em;
+        text-align: center;
+    }
+}

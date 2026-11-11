@@ -1,0 +1,253 @@
+.form .form_pass {
+    border-radius: 20px;
+    padding-left: 20px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.form label {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_button {
+    margin-top: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 30px;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    background-color: #0B6E7D;
+    cursor: pointer;
+}
+
+.form_button.gog {
+    margin-top: 5px;
+    width: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.contain-butt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rec-log {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.rec-log #recuperar {
+    cursor: pointer;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+#recuperar:hover {
+    color: #0B6E7D;
+}
+
+.err {
+    color: red;
+    height: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+@media (orientation: portrait) {
+    #box {
+        width: 100vw;
+    }
+
+    .card-log {
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #cotente-form-log .form {
+        height: 100vh;
+        width: 70vw;
+        gap: 2%;
+    }
+
+    #head-log {
+        gap: 0px;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .rec-log #recuperar {
+        margin-bottom: 13%;
+    }
+
+    #head-log img:last-child {
+        height: 50%;
+        margin: 10px;
+    }
+
+
+}
+
+@media (min-width: 577px) and (orientation: portrait){
+    .pan{
+        height: 8% !important;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 577px) {
+    #head-log img:first-child {
+        height: 100%;
+        width: 46%;
+        bottom: 0px;
+        margin-right: 16.6%;
+    }
+
+    .form .form_pass {
+        border-radius: 20px;
+        padding-left: 20px;
+        height: 35px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 578px) and (max-width: 768px) and (orientation: portrait) {
+    #head-log img:first-child {
+        height: 100%;
+        width: 35%;
+        bottom: 0px;
+        margin-right: 27.5%;
+    }
+
+    .form .form_pass {
+        height: 8%;
+    }
+
+    .contain-butt {
+        margin-top: 10%;
+    }
+
+    .form_button {
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+    #head-log img:first-child {
+        height: 100%;
+        width: 25%;
+        bottom: 0px;
+        margin-right: 34%;
+    }
+
+    .form .form_pass {
+        height: 8%;
+    }
+
+    .contain-butt {
+        margin-top: 10%;
+    }
+
+    .form_button {
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {
+    #head-log img:first-child {
+        height: 100%;
+        width: 30%;
+        bottom: 0px;
+        margin-right: 31.5%;
+    }
+
+    .form .form_pass {
+        height: 8%;
+    }
+
+    .contain-butt {
+        margin-top: 10%;
+    }
+
+    .form_button {
+        width: 300px;
+        height: 50px;
+    }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1919px) and (orientation: portrait) {
+    #head-log img:first-child {
+        height: 100%;
+        width: 27%;
+        bottom: 0px;
+        margin-right: 36%;
+    }
+
+    .form .form_pass {
+        height: 8%;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+
+    /*estilo pra computadores com até 1920px*/
+    #head-log img:first-child {
+        top: 20%;
+        height: 200%;
+        width: 100%;
+    }
+
+    #head-log {
+        position: relative;
+        gap: 200px;
+        width: 50%;
+        height: 10%;
+        left: 315px;
+        bottom: 65px;
+    }
+}
+
+@media (min-width: 1900px) {
+    #head-log img:first-child {
+        width: 200px;
+        height: 200px;
+        margin-right: 45px;
+    }
+}
+
+@media (min-width: 577px) and (max-width:992px) and (orientation: landscape) {
+    .form .form_pass {
+        height: 42px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
+    .form .form_pass {
+        height: 40px;
+    }
+
+    .contain-butt {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_button.gog {
+        margin-top: 15px;
+    }
+}

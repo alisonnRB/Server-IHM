@@ -1,0 +1,43 @@
+.conversas{
+    margin-top: 50px;
+    margin-left: 10px;
+    height: 600px;
+    width: 35%;
+    padding-right: 20px;
+    overflow-y: auto;
+}
+.conversas .listaC{
+    height: 100%;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (orientation: portrait){
+    .conversas{
+        height: 100px;
+        width: 96.5vw;
+        margin-left: 0;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .conversas .listaC{
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .conversas .listaC::-webkit-scrollbar{
+        height: 2px;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .conversas {
+        height: 100vh;
+    }
+
+}

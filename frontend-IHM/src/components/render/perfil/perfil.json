@@ -1,0 +1,29 @@
+{
+    "en": {
+        "title": "PROFILE",
+        "genero": "FAVORITE GENRES",
+        "meusLivros": "MY BOOKS",
+        "meusFavoritos": "MY FAVORITES",
+        "livros": "BOOKS",
+        "publi": "PUBLICATIONS",
+        "noMore": "There are no new publications"
+    },
+    "pt": {
+        "title": "PERFIL",
+        "genero": "GÊNERO FAVORITO",
+        "meusLivros": "MEUS LIVROS",
+        "meusFavoritos": "MEUS FAVORITOS",
+        "livros": "LIVROS",
+        "publi": "PUBLICAÇÔES",
+        "noMore": "Não há Novas publicações"
+    },
+    "es": {
+        "title": "PERFIL",
+        "genero": "GÉNERO FAVORITO",
+        "meusLivros": "MIS LIBROS",
+        "meusFavoritos": "MIS FAVORITOS",
+        "livros": "LIBROS",
+        "publi": "PUBLICACIONES",
+        "noMore": "No hay nuevas publicaciones"
+    }
+}

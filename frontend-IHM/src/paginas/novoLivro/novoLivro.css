@@ -1,0 +1,41 @@
+.boxNewBook {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+}
+
+.boxNewBook header {
+    height: 100px;
+    background: var(--header-edita-livro) !important;
+    background: linear-gradient(75deg, var(--header-edita-livro) 0%, var(--header-edita-livro1) 25%, var(--header-edita-livro1) 50%, var(--header-edita-livro) 100%) !important;
+}
+
+.boxNewBook header #logoH {
+    left: 0;
+    height: 230px;
+    width: 230px;
+}
+
+.ConfigBook {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+    .boxNewBook header {
+        display: none;
+    }
+
+    .ConfigBook {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

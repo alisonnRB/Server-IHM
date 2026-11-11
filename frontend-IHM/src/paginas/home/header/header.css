@@ -1,0 +1,68 @@
+.MAIN {
+    height: 80px;
+    min-width: 98vw;
+    max-width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.caixa-left {
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+#logoMAIN {
+    height: 100%;
+    width: 150px;
+}
+
+.nos {
+    margin-right: 30px;
+}
+
+.btMA {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9em;
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #2A7A8D;
+    margin-top: 10px;
+}
+
+@media (max-width: 992px) and (orientation: portrait) {
+    .MAIN {
+        padding-right: 0;
+        justify-content: center;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
+    #logoMAIN {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+
+    .caixa-left {
+        gap: 2%;
+    }
+
+    #logoMAIN {
+        height: 150%;
+        width: 15%;
+    }
+
+
+
+}

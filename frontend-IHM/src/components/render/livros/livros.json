@@ -1,0 +1,32 @@
+{
+    "en": {
+        "title": "BOOKS",
+        "buscar": "SEARCH",
+        "filtros": "FILTERS",
+        "classificacao": "PARENTAL RATING",
+        "Novo_livro": "NEW BOOKS",
+        "finalizado": "FINALIZED",
+        "notFound": "BOOK NOT FOUND :(",
+        "noMore": "No more publications"
+    },
+    "pt": {
+        "title": "LIVROS",
+        "buscar": "BUSCAR",
+        "filtros": "FILTROS",
+        "classificacao": "CLASSIFICAÇÃO INDICATIVA",
+        "Novo_livro": "LIVROS NOVOS",
+        "finalizado": "FINALIZADOS",
+        "notFound": "LIVRO NÃO ENCONTRADO :(",
+        "noMore": "Não há mais publicações"
+    },
+    "es": {
+        "title": "LIBROS",
+        "buscar": "BUSCAR",
+        "filtros": "FILTROS",
+        "classificacao": "CALIFICACIÓN DE LOS PADRES",
+        "Novo_livro": "LIBROS NUEVOS",
+        "finalizado": "FINALIZADO",
+        "notFound": "LIBRO NO ENCONTRADO :(",
+        "noMore": "No más publicaciones"
+    }
+}

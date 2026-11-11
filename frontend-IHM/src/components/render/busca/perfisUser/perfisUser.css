@@ -1,0 +1,401 @@
+.boxNameUser {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.boxNameUser #fotoPerfilUser {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.boxNameUser #nomeUser {
+    color: var(--letra-g);
+}
+
+.boxGenero {
+    padding-bottom: 40px;
+}
+
+.boxMeulivroUser {
+    gap: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.boxMeulivroUser .boxTitleUser {
+    height: 80px;
+    justify-content: center;
+}
+
+.boxMeulivroUser .livrosUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.seguir {
+    cursor: pointer;
+    background-color: #0A6E7D;
+    color: white;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#medalhasBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+@media (max-width: 576px) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+
+
+    .boxNameUser {
+        height: 500px;
+
+    }
+
+    #titlePerfilUser {
+        display: none;
+    }
+
+    #nomeUser {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxNameUser {
+        margin-top: 30px;
+        height: 280px;
+    }
+
+    .boxNameUser #fotoPerfilUser {
+        height: 130px;
+        width: 130px;
+    }
+
+    .boxGenero {
+        margin-bottom: 50px;
+    }
+
+    #medalhaUser {
+        width: 50px;
+        height: 30px;
+
+    }
+
+    .medalhaUser p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(70px - 5vh);
+        min-width: calc(85px + 5vw);
+        font-size: 0.9em;
+        margin-right: -6px;
+        margin-left: -7px;
+        padding-bottom: 0px;
+    }
+
+    #titleGen,
+    #titleLivro {
+        font-size: 2em;
+        text-decoration: none;
+        outline: none;
+
+    }
+
+    .favGenUser {
+        height: 65%;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+
+    .perfilpagep {
+        padding-bottom: 11vh;
+    }
+
+    .boxNameUser {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #nomeUser {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxNameUser #fotoPerfilUser {
+        height: 150px;
+        width: 150px;
+    }
+
+    #medalhaUser {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalhaUser p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(95px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Estilos para tablets e dispositivos em modo paisagem */
+
+    .perfilpagep {
+        padding-bottom: 11vh;
+    }
+
+    .boxNameUser {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #nomeUser {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxNameUser #fotoPerfilUser {
+        height: 150px;
+        width: 150px;
+    }
+
+    #medalhaUser {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalhaUser p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(95px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .boxMeulivroUser {
+        height: 350px;
+    }
+
+    .livrosUser {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+
+    .livrosUser .coluna {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation:landscape) {
+    .perfilpagep .coluna {
+        margin-left: -15%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+
+    .boxNameUser {
+        height: 390px;
+        margin-top: 50px;
+    }
+
+    #nomeUser {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxNameUser #fotoPerfilUser {
+        height: 200px;
+        width: 200px;
+    }
+
+    #medalhaUser {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalhaUser p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(110px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .perfilpagep .coluna {
+        margin-left: -2%;
+    }
+}
+
+@media (min-width: 1201px) and (orientation: landscape) and (hover: none){
+    .perfilpagep .coluna {
+        margin-left: -15%;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    /* Estilos para dispositivos desktop (telas maiores) */
+
+    .boxNameUser {
+        margin-bottom: 5%;
+        height: 100%;
+        width: 100%;
+    }
+
+    #titlePerfilUser {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        color: white;
+        min-height: 200px;
+        min-width: 300px;
+        background-size: 100% 100%;
+        position: relative;
+        top: -70px;
+        margin-bottom: -70px;
+    }
+
+
+    .boxNameUser #fotoPerfilUser {
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    #nomeUser {
+        border-radius: 20px;
+        min-height: 20px;
+    }
+
+    .boxGenero {
+        margin-bottom: 5%;
+        height: 300px;
+    }
+
+    .boxtitleGenderUser {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxGenero span {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .boxGen {
+        height: 40px;
+        width: 160px;
+
+    }
+
+    #medalhaUser {
+        height: 30px;
+        width: 60px;
+    }
+}
+
+@media (orientation: portrait) and (hover: none){
+
+    /* Estilos para dispositivos em modo retrato */
+    .perfilpagep .coluna:last-child {
+        padding-bottom: 200px;
+    }
+
+    #nomeUser {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxGeneroUser span {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+}
+
+@media (orientation: landscape)  and (hover: none)  {
+
+    /* Estilos para dispositivos em modo paisagem */
+    .perfilpagep .coluna:last-child {
+        padding-bottom: 100px;
+    }
+}
+
+@media (hover: hover){
+    .perfilpagep .linha:last-child {
+        padding-bottom: 100px;
+    }
+}

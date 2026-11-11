@@ -1,0 +1,145 @@
+#box {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-color: #E5EDEF;
+}
+
+.content-log {
+    background-color: transparent;
+}
+
+.card-log {
+    height: 95vh;
+    width: 35vw;
+    display: block;
+    border-radius: 10px;
+    background-color: #EBEBEB;
+    box-shadow: 0px 0px 20px 0px rgba(87, 91, 92, 0.397);
+}
+
+.invisible-log {
+    height: 10px;
+    width: 10px;
+}
+
+#head-log {
+    display: flex;
+    justify-content: end;
+    height: 13%;
+    gap: 32%;
+}
+
+#head-log img:first-child {
+    position: relative;
+    margin-top: 10px;
+    bottom: 35px;
+    height: 105px;
+    width: 105px;
+}
+
+#head-log img:last-child {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+#bt-log {
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#bt-log .bt-log {
+    background-color: transparent;
+    width: 50%;
+    padding-top: 6px;
+    color: #A6A6A6;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.bt-log.this {
+    border-top: solid 4px #00647E;
+    color: #00414A !important;
+    padding-top: 0;
+}
+
+#cotente-form-log {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-top: 0;
+}
+
+#cotente-form-log .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width:992px) and (orientation: portrait) {
+    #cotente-form-log {
+        padding: 0;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    #head-log img:first-child {
+        display: none;
+    }
+
+    #head-log {
+        height: 50px;
+    }
+}
+
+@media (max-width: 577px) and (orientation: landscape) {
+    #box {
+        height: 180vh;
+        max-height: 180vh;
+        width: 100vw;
+    }
+
+    .card-log {
+        height: 190vh;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 577px) and (max-width:992px) and (orientation: landscape) {
+    #box {
+        height: 160vh;
+        max-height: 160vh;
+        width: 100vw;
+    }
+
+    .card-log {
+        height: 160vh;
+        width: 100vw;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px) and (orientation: landscape) {
+    #box {
+        height: 1200px;
+        max-height: 1200px;
+        width: 100vw;
+    }
+
+    .card-log {
+        height: 1200px;
+        width: 100vw;
+    }
+
+}

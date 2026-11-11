@@ -1,0 +1,17 @@
+{
+    "en": {
+        "confirmar": "Confirme your password to delete the account!",
+        "cancelar": "CANCEL",
+        "excluir": "DELETE"
+    },
+    "pt": {
+        "confirmar": "Confirme sua senha para excluir a conta!",
+        "cancelar": "CANCELAR",
+        "excluir": "EXCLUIR"
+    },
+    "es": {
+        "confirmar": "¡Confirme su contraseña para eliminar la cuenta!",
+        "cancelar": "CANCELAR",
+        "excluir": "ELIMINAR"
+    }
+}

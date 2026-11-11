@@ -1,0 +1,693 @@
+.cardPost {
+    min-height: 350px;
+    max-height: 350px;
+    height: 350px;
+    width: 70%;
+    min-width: 70%;
+    max-width: 70%;
+    display: block;
+    margin-bottom: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--caixafeed);
+    box-shadow: 0px 0px 20px 0px var(--shadow-feed);
+
+    animation: surge 1s ease;
+}
+.cardPost .noIMAGE{
+    cursor: pointer;
+    background-color: white;
+    margin-left: -45px;
+    border-radius: 20px;
+    height: calc(100% + 45px);
+    width: calc(100% + 15px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+.infosPost {
+    height: 100%;
+    width: 100%;
+}
+
+#nom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.imgLinkBox {
+    display: flex;
+    height: 100%;
+    width: 250px;
+}
+
+.imgLink {
+    margin-left: -5px;
+    border-radius: 20px;
+    height: calc(100% + 45px);
+    width: calc(100% + 15px);
+}
+
+.publiUser {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 25px;
+    max-width: 25px;
+    min-width: 25px;
+    width: 25px;
+    margin-right: -25px;
+    overflow: hidden;
+    background-color: white;
+    padding: 3px;
+    border-radius: 30px;
+    border: 0.5px solid black;
+
+    transition: all 1s ease;
+}
+
+.perfilPubli {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.publiUser:hover {
+    max-width: 150px;
+    min-width: 150px;
+    width: 150px;
+    margin-right: -150px;
+}
+
+.textContent {
+    height: calc(100% - 80px);
+    width: 100%;
+    padding: 40px;
+    padding-top: 60px;
+    word-break: break-all;
+}
+
+.publiText {
+    width: 100%;
+    height: 50%;
+    font-size: 1.4em;
+    color: var(--letra);
+}
+
+.curtiComent {
+    height: 35px;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 10px;
+    gap: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--caixafeed);
+    box-shadow: 0px 10px 10px 1px var(--shadow-feed);
+}
+
+.curtiComent img {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.curtiComent .Nom{
+    animation: curti .5s ease;
+}
+
+.curtiComent .Sin{
+    animation: shake .5s ease;
+}
+
+.enqueteTitle {
+    align-items: center;
+    height: 40px;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--letra);
+}
+
+.enquet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.renderEnquete {
+    cursor: pointer;
+    display: grid;
+    width: 600px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+.selectBox {
+    padding-left: 10px;
+    height: 40px;
+    width: 250px;
+    color: var(--letra-p);
+    background-color: var(--enquetevazio);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selectBox.vote {
+    padding-left: 0;
+}
+
+
+.selectBox .votes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+}
+
+.votes p:first-child {
+    max-width: calc(100% - 60px);
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.votes p:last-child {
+    margin-right: 20px;
+}
+
+.selectBox .vote {
+    height: 100%;
+    width: 0%;
+    background-color: #13505C;
+
+    transition: all 1s ease;
+}
+
+.feed #boxComent {
+    width: 66%;
+    margin-top: -30px;
+}
+
+.opPubli{
+    height: 40px;
+    position: relative;
+    left: 95%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.deletePubli{
+    position: fixed;
+    background-color: var(--filtro);
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxDellPubli{
+    background-color: var(--dell-publi);
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boxDellPubli.hovered{
+    background-color: #ff3131;
+}
+
+.boxDellPubli p{
+    color: white;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.boxDellPubli div{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxDellPubli div img{
+    height: 50px;
+}
+
+
+@media (orientation: portrait) {
+    .publiText {
+        padding-top: 0px;
+        margin-bottom: 15px;
+        font-size: 1.3em;
+    }
+    .cardPost {
+        min-height: 200px;
+        max-height: 200px;
+        height: 200px;
+        width: 98%;
+        min-width: 98%;
+        max-width: 98%;
+    }
+
+    .imgLinkBox {
+        display: flex;
+        height: 100%;
+        width: 100px;
+        object-fit: fill;
+    }
+
+    .textContent {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        font-size: .5em;
+    }
+
+    .publiText {
+        padding-top: 20px;
+        font-size: 1.3em;
+    }
+
+    .enqueteTitle {
+        align-items: center;
+        height: 10px;
+        font-size: .9em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .renderEnquete {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .selectBox {
+        padding-left: 5px;
+        height: 30px;
+        width: 120px;
+        font-size: .7em;
+    }
+
+    .selectBox .votes {
+        height: 30px;
+        width: 120px;
+        padding-left: 5px;
+
+    }
+
+    .votes p:first-child {
+        max-width: calc(100% - 10px);
+        max-height: 30px;
+        font-size: .7em;
+    }
+
+    .votes p:last-child {
+        margin-right: 10px;
+        font-size: .7em;
+    }
+
+    .publiUser {
+        left: 3px;
+    }
+
+    #nom {
+        font-size: .7em;
+    }
+
+    
+    .renderPosts #boxComent{
+        min-width: 90vw;
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 992px) and (orientation: portrait){
+    .cardPost{
+        height: 250px;
+        min-height: 250px;
+        max-height: 250px;
+        width: 85%;
+        min-width: 85%;
+        max-width: 85%;
+    }
+
+    .imgLinkBox {
+        width: 150px;
+    }
+
+    .textContent {
+        padding: 30px;
+        font-size: .7em;
+    }
+
+    .selectBox {
+        height: 40px;
+        width: 200px;
+        font-size: 1em;
+    }
+
+    .selectBox .votes {
+        height: 40px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .votes p:first-child {
+        font-size: .8em;
+    }
+
+    .votes p:last-child {
+        margin-right: 15px;
+        font-size: .8em;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait){
+    .cardPost{
+        height: 250px;
+        min-height: 250px;
+        max-height: 250px;
+        width: 75%;
+        min-width: 75%;
+        max-width: 75%;
+    }
+
+    .imgLinkBox {
+        width: 150px;
+    }
+
+    .textContent {
+        padding: 30px;
+        font-size: .7em;
+    }
+
+    .selectBox {
+        height: 40px;
+        width: 200px;
+        font-size: 1em;
+    }
+
+    .selectBox .votes {
+        height: 40px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .votes p:first-child {
+        font-size: .8em;
+    }
+
+    .votes p:last-child {
+        margin-right: 15px;
+        font-size: .8em;
+    }
+
+    .renderPosts #boxComent{
+        min-width: 75vw;
+        display: block;
+    }
+    
+}
+
+@media ((max-width: 400px)) {
+    .selectBox {
+        padding-left: 5px;
+        height: 25px;
+        width: 90px;
+        font-size: .7em;
+    }
+
+    .selectBox .votes {
+        height: 20px;
+        width: 90px;
+        padding-left: 5px;
+
+    }
+
+    .votes p:first-child {
+        max-width: calc(100% - 10px);
+        max-height: 20px;
+        font-size: .7em;
+    }
+
+    .votes p:last-child {
+        margin-right: 5px;
+        font-size: .7em;
+    }
+
+    .curtiComent img {
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        height: 60%;
+    }
+
+}
+
+@media (hover: none) {
+    .publiUser {
+        width: 120px;
+        max-width: 120px;
+        min-width: 120px;
+        margin-right: -120px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .infosPost {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .textContent {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        font-size: .5em;
+    }
+}
+
+@media (max-width: 1200px)  and (orientation: landscape) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .publiText {
+        padding-top: 0px;
+        margin-bottom: 15px;
+    }
+    .cardPost {
+        min-height: 250px;
+        max-height: 250px;
+        height: 200px;
+        width: 98%;
+        min-width: 98%;
+        max-width: 98%;
+    }
+
+    .imgLinkBox {
+        display: flex;
+        height: 100%;
+        width: 100px;
+        object-fit: fill;
+    }
+
+    .textContent {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        font-size: .5em;
+    }
+
+    .publiText {
+        padding-top: 20px;
+        font-size: 2em;
+    }
+
+    .enqueteTitle {
+        align-items: center;
+        height: 10px;
+        font-size: .9em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .renderEnquete {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .selectBox {
+        padding-left: 5px;
+        height: 30px;
+        width: 200px;
+        font-size: .7em;
+    }
+
+    .selectBox .votes {
+        height: 30px;
+        width: 120px;
+        padding-left: 5px;
+
+    }
+
+    .votes p:first-child {
+        max-width: calc(100% - 10px);
+        max-height: 30px;
+        font-size: .7em;
+    }
+
+    .votes p:last-child {
+        margin-right: 10px;
+        font-size: .7em;
+    }
+
+    .publiUser {
+        left: 3px;
+    }
+
+    #nom {
+        font-size: .7em;
+    }
+
+    
+    .renderPosts #boxComent{
+        min-width: 75vw;
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 1001px) and (max-width: 1300px) and (orientation: landscape) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+
+    .cardPost {
+        min-height: 250px;
+        max-height: 250px;
+        height: 250px;
+    }
+
+    .imgLinkBox {
+        display: flex;
+        height: 100%;
+        width: 200px;
+        object-fit: fill;
+    }
+
+    .selectBox {
+        padding-left: 5px;
+        height: 40px;
+        width: 180px;
+        font-size: 1em;
+    }
+
+    .votes p:first-child {
+        max-width: calc(100% - 10px);
+        max-height: 30px;
+        font-size: 1em;
+    }
+
+    .votes p:last-child {
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+    .selectBox .votes {
+        height: 40px;
+        width: 180px;
+        padding-left: 5px;
+    }
+
+    .textContent {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        font-size: .9em;
+    }
+}
+
+@media (min-width: 1301px) and  (orientation: landscape) {
+    
+    .cardPost {
+        min-height: 250px;
+        max-height: 250px;
+        height: 250px;
+    }
+
+    .imgLinkBox {
+        display: flex;
+        height: 100%;
+        width: 200px;
+        object-fit: fill;
+    }
+
+    .selectBox {
+        padding-left: 5px;
+        height: 40px;
+        width: 200px;
+        font-size: 1em;
+    }
+
+    .votes p:first-child {
+        max-width: calc(100% - 10px);
+        max-height: 30px;
+        font-size: 1em;
+    }
+
+    .votes p:last-child {
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+    .selectBox .votes {
+        height: 40px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    .textContent {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        padding-top: 20px;
+        font-size: .9em;
+    }
+
+    .renderPosts #boxComent{
+        min-width: 70vw;
+        display: block;
+    }
+}
+
+
+@keyframes surge {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

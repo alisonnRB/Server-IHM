@@ -1,0 +1,159 @@
+
+.mensagem{
+    background-color: var(--fundo-msg);
+    height: 600px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border-radius: 6px;
+}
+.mensagem .perfilMsg{
+    background-color: var(--info-contato);
+    height: 120px;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.renderMsg{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.mensagem .perfilMsg img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.mensagem .perfilMsg p{
+    font-size: 1.5em;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+.caixaEnviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+}
+.caixaEnviar form{
+    background-color: var(--balao-envia-msg);
+    padding-left: 10px;
+    padding-right: 0;
+    padding: 5px;
+    width: 90%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.caixaEnviar form .inputEnvio{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 40px;
+    width: 90%;
+    color: var(--letra);
+    background-color: var(--envia-msg);
+    overflow-y: scroll;
+}
+.caixaEnviar button{    
+    background: none;
+    position: relative;
+    margin-left: 5px;
+    top: 3px;
+    cursor: pointer;
+}
+.caixaEnviar form img{
+    height: 30px;
+    width: 30px;
+}
+.caixaEnviar form input{
+    color: white;
+    background: none;
+}
+
+.message{
+    margin-bottom: 2px;
+}
+
+.message.mine{
+    justify-content: end;
+}
+
+.msg{
+    height: 100%;
+    padding: 5px;
+    max-width: 80%;
+    word-break: break-all;
+    border-radius: 5px;
+}
+
+.msg.mine{
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.msg.by{
+    background-color: var(--genero);
+    color: white;
+    margin-left: 10px;
+}
+
+
+@media (orientation: portrait){
+    .mensagem{
+        height: 75vh;
+        width: 85%;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mensagem .perfilMsg{
+        height: 80px;
+    }
+
+    .mensagem .perfilMsg img{
+        height: 45px;
+        width: 45px;
+        margin-left: 10px;
+    }
+    
+    .mensagem .perfilMsg p{
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    .caixaEnviar{
+        height: 80px;
+    }
+
+    .caixaEnviar form .inputEnvio{
+        min-height: 30px;
+    }
+
+    .msg{
+        font-size: .8em;
+    }
+
+
+}
+
+@media (max-width: 1200px)  and (orientation: landscape) {
+    .mensagem{
+        width: 50vw;
+        height: 100vh;
+    }
+}

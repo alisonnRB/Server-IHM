@@ -1,0 +1,617 @@
+.perfilpagep {
+    display: block;
+}
+
+.boxName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.boxName #fotoPerfil {
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.edit {
+    height: 20px;
+    width: 20px;
+}
+
+#nome {
+    display: flex;
+    justify-content: center;
+    color: var(--letra-p);
+    background-color: var(--caixa-name);
+    height: 100%;
+    min-width: 200px;
+    border-radius: 30px;
+}
+
+.boxTitle.favoo{
+    margin-top: 100px;
+}
+
+.boxGenero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.boxGenero span,
+.boxMeulivro span {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.numS{
+    color: var(--letra);
+}
+
+#titleGen,
+#titleLivro {
+    color: var(--letra);
+    margin-bottom: 2.5rem;
+    font-size: 2.5em;
+}
+
+.favGen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxGen {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--genero);
+    border-radius: 50px;
+}
+
+.boxMeulivro {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+}
+
+.livros {
+    background-color: rgb(13, 22, 22);
+}
+
+.btPB{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.btPB .btL{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--letra);
+    cursor: pointer;
+    padding: 2px;
+}
+
+.btL.sets{
+    border-bottom: solid #0B6E7D 4px;
+}
+
+.space{
+    height: 70px;
+}
+
+@media (max-width: 576px) and (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+
+    .btPB .btL {
+        font-size: 1em;
+    }
+
+    .boxName {
+        height: 500px;
+
+    }
+
+    #titlePerfil{
+        display: none;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxName {
+        margin-top: 30px;
+        height: 280px;
+    }
+
+    .boxName #fotoPerfil {
+        height: 130px;
+        width: 130px;
+    }
+
+    .boxGenero{
+        margin-bottom: -200px;
+    }
+
+    #medalha {
+        width: 50px;
+        height: 30px;
+
+    }
+
+    .medalha p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(70px - 5vh);
+        min-width: calc(85px + 5vw);
+        font-size: 0.9em;
+        margin-right: -6px;
+        margin-left: -7px;
+        padding-bottom: 0px;
+    }
+
+    #titleGen,
+    #titleLivro {
+        font-size: 2em;
+        text-decoration: none;
+        outline: none;
+
+    }
+
+    .favGen {
+        height: 65%;
+    }
+
+    .boxMeulivro {
+        margin-top: 200px;
+        height: 100px;
+    }
+
+    #link{
+        height: calc(100% - 50px);
+    }
+
+    .livros {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+}
+@media (max-width: 577px) {
+    .perfilpagep {
+        padding-bottom: 11vh;
+    }
+
+    .boxName {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #titlePerfil{
+        display: none;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxName #fotoPerfil {
+        height: 150px;
+        width: 150px;
+    }
+
+    #medalha {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalha p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(95px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .boxMeulivro {
+        height: 350px;
+    }
+
+    .livros {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+
+    .perfilpagep {
+        padding-bottom: 11vh;
+    }
+
+    .boxName {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #titlePerfil{
+        display: none;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxName #fotoPerfil {
+        height: 150px;
+        width: 150px;
+    }
+
+    #medalha {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalha p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(95px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .boxMeulivro {
+        height: 350px;
+    }
+
+    .livros {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Estilos para tablets e dispositivos em modo paisagem */
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+
+    .perfilpagep {
+        padding-bottom: 11vh;
+    }
+
+    .boxName {
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    #titlePerfil{
+        display: none;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxName #fotoPerfil {
+        height: 150px;
+        width: 150px;
+    }
+
+    #medalha {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalha p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(95px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .boxMeulivro {
+        height: 350px;
+    }
+
+    .livros {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+
+    .boxName {
+        height: 390px;
+        margin-top: 50px;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .boxName #fotoPerfil {
+        height: 200px;
+        width: 200px;
+    }
+
+    #medalha {
+        width: 60px;
+        height: 40px;
+
+    }
+
+    .medalha p {
+        font-size: 1.5em;
+    }
+
+    .boxGenero {
+        height: 300px;
+    }
+
+    .boxGen {
+        height: calc(110px - 5vh);
+        min-width: calc(140px + 5vw);
+
+    }
+
+    .boxMeulivro {
+        height: 350px;
+    }
+
+    .livros {
+        height: calc(35vw + 20px);
+        width: calc(35vw + 20px);
+    }
+}
+
+@media (min-width: 1201px) {
+
+    /* Estilos para dispositivos desktop (telas maiores) */
+
+    .boxName {
+        margin-bottom: 5%;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #titlePerfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        color: white;
+        min-height: 200px;
+        min-width: 300px;
+        background: url('../../../imgs/caixa.png');
+        background-size: 100% 100%;
+        position: relative;
+        top: -70px;
+        margin-bottom: -70px;
+    }
+
+    #titlePerfil.dark{
+        background: url('../../../imgs/trapezio.png');
+        background-size: 100% 100%;
+    }
+
+
+    .boxName #fotoPerfil {
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+        background-image: url('../../../imgs/perfiledit.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .edit {
+        cursor: pointer;
+    }
+
+    .boxtitleGender .edit {
+        cursor: pointer;
+        position: relative;
+        bottom: 13px;
+        height: 20px;
+        width: 20px;
+    }
+
+    #nome {
+        border-radius: 20px;
+        min-height: 20px;
+    }
+
+    .boxGenero {
+        margin-bottom: 5%;
+        height: 300px;
+    }
+
+    .boxtitleGender {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxGenero span,
+    .boxMeulivro span {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .boxGen {
+        height: 40px;
+        width: 160px;
+
+    }
+
+
+
+    .boxMeulivro .boxTitle {
+        position: relative;
+        height: 10%;
+        width: 50%;
+        justify-content: center;
+    }
+
+    #link {
+        height: 60%;
+        width: 90%;
+    }
+
+    #medalha {
+        height: 30px;
+        width: 60px;
+    }
+}
+
+@media (orientation: portrait) {
+
+    /* Estilos para dispositivos em modo retrato */
+    .perfilpagep {
+        padding-bottom: 300px;
+    }
+
+    #titlePerfil {
+        display: none;
+        font-size: 3.5em;
+    }
+
+    #titlePerfil {
+        font-size: 3.5em;
+    }
+
+    #nome {
+        height: 20px;
+        min-height: 20px;
+    }
+
+    .edit {
+        display: none;
+    }
+
+    .boxGenero span,
+    .boxMeulivro span {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+    .livros {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+    .perfilpagep {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 667px) and (min-width: 375px) {
+    .btPB .btL {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .PERFIL .content-notifica {
+        right: 21px;
+        margin-top: 0px;
+    }
+
+    #titleLivro {
+        margin-top: 5em;
+        font-size: 2em;
+    }
+
+    .boxMeulivro {
+        padding-bottom: 100px;
+    }
+
+    .boxGenero {
+        margin-top: 100px;
+    }
+    
+    
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    #titleGen, #titleLivro {
+        position: relative;
+        top: 50px;
+    }
+
+    .btPB .btL {
+        position: relative;
+        bottom: 50px;
+    }
+}

@@ -1,0 +1,73 @@
+.CardLink{
+    min-height: 150px;
+    max-height: 150px;
+    width: 85%;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: var(--box-publi-livro);
+    border-radius: 10px;
+}
+
+.CardLink .noIMAGE{
+    background-color: white;
+    width: 15%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+.CardLink .content{
+    height: 100%;
+    width: 100%;
+}
+
+.CardLink .content #capa{
+    width: 13%;
+    border-radius: 8px;
+}
+.caixaInfo{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.CardLink .content .caixaInfo .boxNome{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 30px;
+    align-items: center;
+    height: 20%;
+    color: var(--letra);
+}
+
+.CardLink .content .caixaInfo .boxSinopse{
+    height: 80%;
+    width: 85%;
+    overflow: auto;
+    padding-left: 30px;
+    word-break: break-all;
+    color: var(--letra);
+}
+
+.CardLink .content .caixaInfo .boxSinopse::-webkit-scrollbar{
+    width: 0;
+}
+
+
+@media (orientation: portrait) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .CardLink .content #capa{
+        min-width: 25%;
+        border-radius: 8px;
+        object-fit: fill;
+    }
+    
+    .boxSinopse{
+        display: none;
+    }
+ 
+}
+
+

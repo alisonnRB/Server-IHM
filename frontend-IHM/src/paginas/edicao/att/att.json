@@ -1,0 +1,38 @@
+{
+    "en": {
+        "tema": "theme:",
+        "salvar": "SAVE",
+        "cancelar": "CANCEL",
+        "publico": "PUBLIC",
+        "finalizado": "FINISHED",
+        "nome": "NAME :",
+        "text1": "Do you really want to delete this Book??",
+        "text2": "It will be impossible to recover it!!",
+        "ss": "YES",
+        "n": "NO"
+    },
+    "pt": {
+        "tema": "tema:",
+        "salvar": "SALVAR",
+        "cancelar": "CANCELAR",
+        "publico": "PÚBLICO",
+        "finalizado": "FINALIZADO",
+        "nome": "NOME :",
+        "text1": "Você realmente quer excluir esse Livro??",
+        "text2": "Será impossível recuperá-lo!!",
+        "ss": "SIM",
+        "n": "NÃO"
+    },
+    "es": {
+        "tema": "tema:",
+        "salvar": "GUARDAR",
+        "cancelar": "CANCELAR",
+        "publico": "PUBLICO",
+        "finalizado": "FINALIZADO",
+        "nome": "NOMBRE :",
+        "text1": "¿Realmente quieres eliminar este libro?",
+        "text2": "¡¡Será imposible recuperarlo!!",
+        "ss": "SI",
+        "n": "NO"
+    }
+}

@@ -1,0 +1,71 @@
+center{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 110px;
+}
+center h1 {
+    color: var(--letra);
+    position: absolute;
+    left: 70px;
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+        
+/* toggle in label designing */
+.toggle {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.452);
+    position : relative ;
+    display : inline-block;
+    min-width : 70px;
+    min-height : 32px;
+    background-color: #A6A6A6;
+    border-radius: 30px;
+}
+        
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    top: 1px; 
+    left: 1px;
+    transition:  all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+    left : 39px; 
+}
+        
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: #087F97;
+}
+        
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+    center h1{
+        margin-left: -200px;
+    }
+}
+
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    center h1 {
+        color: var(--letra);
+        font-size: 1.2em;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}

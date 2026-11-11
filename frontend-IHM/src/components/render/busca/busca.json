@@ -1,0 +1,20 @@
+{
+    "en": {
+        "title": "USERS",
+        "buscar": "SEARCH",
+        "not": "We didn't find anyone :/",
+        "noMore": "There are no more users"
+    },
+    "pt": {
+        "title": "USUÁRIOS",
+        "buscar": "BUSCAR",
+        "not": "Não encontramos Ninguém :/",
+        "noMore": "Não há mais usuários"
+    },
+    "es": {
+        "title": "USUARIOS",
+        "buscar": "BUSCAR",
+        "not": "No encontramos a nadie :/",
+        "noMore": "No hay mas usuarios"
+    }
+}

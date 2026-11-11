@@ -1,0 +1,131 @@
+.conversas .listaC li {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50px;
+    width: 80%;
+    height: 60px;
+    background-color: var(--deleta-cap);
+
+    transition: all .3s ease;
+    animation: surge 1s ease;
+}
+
+.conversas .listaC li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.nomes {
+    height: 100%;
+    display: block;
+}
+
+.set {
+    box-shadow: -15px -8px 0px 0px var(--shadow-contato);
+    margin-top: 20px;
+}
+
+.nomes p:first-child {
+    height: 40%;
+    font-size: 1.3em;
+    color: var(--letra-g);
+}
+
+.nomes p:last-child {
+    height: 60%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.nomes p {
+    margin-left: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.msg-new{
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    font-size: .9em;
+    bottom: 59%;
+    left: 30%;
+}
+
+.msg-new.not{
+    visibility: hidden;
+}
+
+@media (orientation: portrait) {
+    .conversas .listaC li {
+        width: 300px;
+        min-width: 300px;
+        height: 50px;
+    }
+
+    .set {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .conversas .listaC li {
+        width: 230px;
+        min-width: 230px;
+        height: 30px;
+        position: relative;
+        left: 20px;
+    }
+
+    .conversas .listaC li img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .nomes p:first-child {
+        height: 50%;
+        font-size: .9em;
+        color: #0A6E7D;
+    }
+
+    .nomes p:last-child {
+        font-size: .7em;
+    }
+
+
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .conversas .listaC li {
+        width: 60%;
+        min-width: 60%;
+        height: 7%;
+    }
+
+    .nomes p:last-child {
+        font-size: .7em;
+    }
+
+    .conversas .listaC li img {
+        width: 50px;
+        height: 50px;
+    }
+}

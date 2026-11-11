@@ -1,0 +1,41 @@
+{
+    "en": {
+        "place": "Reply..",
+        "reply": "Reply",
+        "ano": "year",
+        "anos": "years",
+        "mes": "month",
+        "meses": "months",
+        "semana": "week",
+        "semanas": "weeks",
+        "hoje": "today",
+        "dias": "days",
+        "ha": "ago"
+    },
+    "pt": {
+        "place": "Responder...",
+        "reply": "Responder",
+        "ano": "ano",
+        "anos": "anos",
+        "mes": "mês",
+        "meses": "meses",
+        "semana": "semana",
+        "semanas": "semanas",
+        "hoje": "hoje",
+        "dias": "dias",
+        "ha": "há"
+    },
+    "es": {
+        "place": "Responder...",
+        "reply": "Responder",
+        "ano": "año",
+        "anos": "años",
+        "mes": "mes",
+        "meses": "meses",
+        "semana": "semana",
+        "semanas": "semanas",
+        "hoje": "hoy",
+        "dias": "días",
+        "ha": "hace"
+    }
+}

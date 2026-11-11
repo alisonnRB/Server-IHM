@@ -1,0 +1,19 @@
+.gender{
+    color: var(--letra-g);
+    border: solid var(--genero);
+    cursor: pointer;
+    height: 80%;
+    width: 20%;
+    max-width: 20%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    word-break: break-all;
+    text-align: center;
+}
+.gender:hover{
+    background-color: #3393a65f;
+    color: white;
+}

@@ -1,0 +1,803 @@
+.TelaLivros {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.TelaLivros #titlePerfil {
+    margin-bottom: -100px;
+    width: 300px;
+}
+
+.TelaLivros #pesquisa {
+    width: 100%;
+}
+
+.boxLivros {
+    margin-top: 3%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#searchImg {
+    height: 60%;
+    width: 75px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--barra-busca);
+    cursor: pointer;
+    background-image: url('../../../imgs/lupa.png');
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: 0px 0px 10px 0px var(--shadow-search);
+
+}
+
+#searchImg.dark{
+    background-image: url('../../../imgs/lupa-dark.png');
+}
+
+.boxLivros #searchText {
+    box-shadow: 0px 0px 10px 0px  var(--shadow-search);
+    height: 60%;
+    width: 80%;
+    padding-left: 1em;
+    background-color: var(--barra-busca);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-weight: bold;
+    color: var(--letra);
+}
+
+#searchText::placeholder{
+    color: var(--letra);
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.filtros #title {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    height: 50px;
+    width: 84%;
+}
+
+.filtros #title p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: .8em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--letra);
+}
+
+.BOXS {
+    height: 250px;
+    min-width: 84%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    animation: openFil .1s linear;
+}
+
+.BOXS.fecha {
+    height: 0;
+    overflow: hidden;
+    animation: closeFil .1s linear;
+}
+
+.BOXS .boxSelection {
+    box-shadow: 0px 0px 10px 0px var(--shadow-search);
+    background-color: var(--balão-filtro);
+    height: 90%;
+    width: 33%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.BOXS .boxSelection.Gener #selecao {
+    background-color: var(--selecionar-filtro);
+    color: var(--letra);
+    position: relative;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.BOXS .boxSelection.Gener .boxGend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: inherit;
+    width: 300px;
+}
+
+.BOXS .boxSelection.Gener .boxGend .Genero {
+    margin-top: 16%;
+    height: 40px;
+    width: 250px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 23px;
+    animation: none;
+}
+
+.BOXS .boxSelection .indi {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 300px;
+    background-color: var(--selecionar-filtro);
+    color: var(--letra);
+    box-shadow: 0px 0px 15px 0px var(--shadow-select);
+    border-radius: 30px;
+}
+
+
+.BOXS .boxSelection.inter {
+    background-color: var(--background);
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25%;
+    gap: 20px;
+}
+
+.BOXS .boxSelection.inter center {
+    box-shadow: 0px 0px 10px 0px var(--shadow-search);
+    border-radius: 25px;
+    background-color: var(--balão-filtro);
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+
+.BOXS .boxSelection.inter center h1 {
+    position: inherit;
+    font-size: 1em;
+    width: 10px;
+
+}
+
+.buscaLivros {
+    min-height: 80%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxSelection .opsClass {
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boxSelection .opsClass .imgC {
+    cursor: pointer;
+    height: 40px;
+    width: 43px;
+    border-radius: 7px;
+
+    animation: abrir .4s ease-in reverse;
+}
+
+.boxSelection .opsClass .caixaDeClass {
+    border-radius: 7px;
+    background-color: green;
+    height: 40px;
+    width: 43px;
+    border: solid black 1px;
+}
+
+.boxSelection .opsClass .caixaDeClass #imagemClass {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+
+#imagemClass:hover {
+    box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.774);
+}
+
+#notFound {
+    font-size: 5em;
+    word-break: break-all;
+    margin-bottom: 100px;
+    color: #BACFD1;
+}
+
+.TelaLivros #notMore {
+    position: relative;
+    bottom: 200px;
+    font-size: 5em;
+    word-break: break-all;
+    color: #BACFD1;
+}
+
+
+.TelaLivros .disparador{
+    height: 20px;
+    margin-top: 200px;
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .BOXS {
+        height: 500px;
+        min-width: 100%;
+        margin-top: 1%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 150px;
+        width: 90%;
+    }
+
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        justify-content: start;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 30%;
+        width: 105%;
+    }
+
+    .BOXS .boxSelection.inter center h1 {
+        position: relative;
+        font-size: 1em;
+        width: 10px;
+        left: 26%;
+    }
+
+    #notFound {
+        font-size: 1.5em;
+    }
+
+    #searchImg {
+        width: 60px;
+    }
+    .TelaLivros #notMore{
+        font-size: 1.75em;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 100px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 25%;
+        padding: 10px;
+        gap: 82px;
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 130px;
+        margin-bottom: 5px;
+        font-size: .6em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 130px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 20px;
+        width: 130px;
+        font-size: .6em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 130px;
+        font-size: .6em;
+        background-color: var(--selecionar-filtro);
+        color: var(--letra);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 23px;
+        max-width: 23px;
+        margin-right: -2px;
+    }
+
+    .caixaDeClass{
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    #imagemClass{
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+
+
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (orientation: portrait) {
+    .TelaLivros #notMore {
+        font-size: 2em;
+    }   
+    
+    .BOXS .boxSelection.inter center h1 {
+        left: 90px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 150px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 30%;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 200px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 25px;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        background-color: var(--selecionar-filtro);
+        color: var(--letra);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 35px;
+        max-width: 35px;
+        margin-right: -2px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+     /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 100px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 25%;
+        padding: 10px;
+        gap: 85px;
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 130px;
+        margin-bottom: 5px;
+        font-size: .6em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 130px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 20px;
+        width: 130px;
+        font-size: .6em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 130px;
+        font-size: .6em;
+        background-color: var(--selecionar-filtro);
+        color: var(--letra);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 23px;
+        max-width: 23px;
+        margin-right: -2px;
+    }
+
+    .caixaDeClass{
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    #imagemClass{
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 150px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 30%;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 200px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 25px;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        background-color: var(--selecionar-filtro);
+        color: var(--letra);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 35px;
+        max-width: 35px;
+        margin-right: -2px;
+    }
+
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 150px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 30%;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 200px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 25px;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        background-color: var(--selecionar-filtro);
+        color: var(--letra);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 35px;
+        max-width: 35px;
+        margin-right: -2px;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .TelaLivros #titlePerfil{
+        display: none;
+    }
+    .BOXS {
+        min-width: 95%;
+        margin-top: 1%;
+        gap: 10px;
+    }
+
+
+    .BOXS .boxSelection {
+        height: 150px;
+        width: 30%;
+    }
+
+    .BOXS .boxSelection.inter {
+        flex-direction: column;
+        width: 30%;
+        gap: 20px;
+    }
+
+    .BOXS .boxSelection.inter center {
+        height: 30%;
+        gap: 110px;
+        width: 100%;
+    }
+
+    .BOXS .boxSelection.Gener #selecao {
+        position: relative;
+        height: 30px;
+        width: 200px;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
+
+    .BOXS .boxSelection.Gener .boxGend {
+        width: 200px;
+    }
+
+    .BOXS .boxSelection.Gener .boxGend .Genero {
+        height: 25px;
+        width: 150px;
+        font-size: 1em;
+    }
+
+    .BOXS .boxSelection .indi {
+        text-align: center;
+        height: 30px;
+        width: 200px;
+        background-color: var(--selecionar-filtro);
+        box-shadow: 0px 0px 15px 0px #087f9757;
+        border-radius: 30px;
+    }
+
+    .imgC {
+        max-height: 35px;
+        max-width: 35px;
+        margin-right: -2px;
+    }
+
+}
+
+
+@keyframes openFil {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 250px;
+    }
+}
+
+@keyframes closeFil {
+    0% {
+        height: 250px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    /*estilo pra computadores com até 1920px*/
+    .TelaLivros #titlePerfil {
+        
+        margin-bottom: -100px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    .TelaLivros #titlePerfil {
+        margin:auto;
+        margin-bottom: -100px;
+        width: 300px;
+    }
+    .BOXS .boxSelection.inter center {
+        box-shadow: 0px 0px 10px 0px var(--shadow-search);
+        border-radius: 25px;
+        background-color: var(--balão-filtro);
+        justify-content: center;
+        height: 30%;
+        width: 90%;
+        padding-left: -80%;
+    }
+    
+}
+
+
+@media (min-width:1200px) and (max-width:1899px){
+    .TelaLivros #titlePerfil {
+        margin:auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    .BOXS .boxSelection.Gener #selecao {
+        font-size: 0.75em;
+    }
+
+    .BOXS .boxSelection .indi {
+        font-size: 0.75em;
+    }
+
+    #notFound{
+        font-size: 3em;
+    }
+
+    .BOXS .boxSelection.inter center h1 {
+        font-size: 0.55em;
+        margin-right: 50px;
+    }
+}
+

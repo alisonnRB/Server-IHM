@@ -1,0 +1,156 @@
+#comentary {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+
+    animation: surge 2s ease;
+}
+
+#comentary .userComent {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+#comentary .boxComent {
+    width: calc(100% - 120px);
+}
+
+#comentary .boxComent .nomeComent {
+    font-weight: bold;
+    height: 25%;
+    width: calc(100% - 7px);
+    padding-left: 7px;
+    color: var(--letra-g);
+}
+
+#comentary .boxComent .coment {
+    height: 75%;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+    color: var(--letra);
+}
+
+#comentary .btsCurti {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    min-height: 100%;
+    width: calc(100% - (100% - 120px));
+}
+
+#comentary .btsCurti .boxDEimg {
+    background-color: #C4BFB2;
+    height: 20px;
+    max-height: 20px;
+    width: 40px;
+    max-width: 40px;
+    animation: shake .5s ease;
+}
+
+#comentary .btsCurti .core {
+    cursor: pointer;
+    position: relative;
+    bottom: .51px;
+    right: .6px;
+    height: calc(100% + 1.5px);
+    width: calc(100% + 3px);
+    object-fit: fill;
+}
+
+#comentary .btsCurti .boxDEimg.c {
+    animation: curti .5s ease;
+    transform-origin: center;
+}
+
+.reply {
+    font-size: .9em;
+    cursor: pointer;
+    -webkit-text-stroke: .5px black;
+}
+
+#infosComent {
+    gap: 5px;
+    height: 20%;
+    width: calc(100% - 65px);
+    padding-left: 65px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: .5px black;
+}
+
+#resposta {
+    height: 50px;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+#resposta input {
+    background-color: var(--barra-busca);
+    padding-left: 20px;
+    height: 90%;
+    width: calc(100% - 20px);
+    border-radius: 30px;
+    color: var(--letra);
+}
+
+#resposta input::placeholder{
+    color: var(--letra);
+}
+
+.likeNUM {
+    position: relative;
+    z-index: 100;
+    color: var(--letra);
+}
+
+@keyframes curti {
+    0% {
+        transform: scale(1, 1);
+    }
+
+
+
+    50% {
+        transform: scale(1.30, 1.30);
+    }
+
+
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-1px) rotate(-2deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(1px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@media (max-width: 576px) {
+
+}

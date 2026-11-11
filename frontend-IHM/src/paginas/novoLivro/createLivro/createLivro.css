@@ -1,0 +1,356 @@
+.boxNewBookC {
+    height: 100%;
+    width: 100vw;
+}
+
+.formCreateBook {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: calc(100vw - 100px);
+}
+
+.capaDoLivro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+}
+
+.capaDoLivro #fileBoxC {
+    height: 100%;
+    width: 100%;
+}
+
+.capaDoLivro .custom-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: #BACFD1;
+    background-image: url('../../../imgs/MaisBranco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 75%;
+}
+
+.custom-input.dark{
+    background-image: url('../../../imgs//MaisBranco-dark.png') !important;
+    background-color: #01181B !important;
+}
+
+.quad {
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+    top: 120px;
+    height: 70px;
+    width: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fundo {
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+.opsClass {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    width: 110px;
+    overflow: hidden;
+}
+
+.opsClass .imgC {
+    height: 70px;
+    width: 75px;
+    z-index: 1;
+    border-radius: 7px;
+
+    animation: abrir .3s linear reverse;
+}
+
+.opsClass .imgC.close {
+    animation: fechar .33s linear;
+}
+
+.capaDoLivro input[type='file'] {
+    display: none;
+}
+
+.Infos {
+    height: 100%;
+    width: 65%;
+}
+
+.Infos #Nome {
+    height: 15%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+.Infos #Nome .nomeDoLivro {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    align-items: center;
+}
+
+.Infos #Nome .livroNome {
+    border-bottom: solid 1px #087F97;
+    padding-left: 20px;
+    font-size: 2em;
+    height: 100%;
+    width: 80%;
+    background-color: var(--background);
+    color: var(--letra);
+}
+
+.Infos #Nome label{
+    color: var(--letra);
+    white-space: nowrap;
+}
+
+.Infos #Nome .xis {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Infos #Nome .xis img {
+    height: 40%;
+    width: 40%;
+}
+
+.GenBoxL {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 70%;
+    width: 40%;
+}
+
+#contadora {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    display: flex;
+    height: 3%;
+    width: 100%;
+}
+
+#contadora p {
+    color: var(--fracao-edit-livro) !important;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 25%;
+}
+
+.salvaLivro {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.salvaLivro button {
+    all: unset;
+    background-color: none;
+    cursor: pointer;
+    height: 10%;
+    cursor: pointer;
+    color: var(--letra-g) !important;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.trans {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff09;
+}
+
+
+
+@media (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .boxNewBookC {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .boxNewBookC .formCreateBook {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .capaDoLivro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 100vw;
+        min-height: 300px;
+    }
+
+
+    .Infos {
+        min-height: 400px;
+        min-width: 100vw;
+    }
+
+    .Infos #Nome {
+        height: 15%;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10%;
+    }
+
+    .Infos #Nome .nomeDoLivro {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+
+
+    .Infos #Nome .livroNome {
+        font-size: 2em;
+        height: 100%;
+        min-width: 100%;
+    }
+
+    .Infos #Nome .xis {
+        display: none;
+    }
+
+    .Infos .generosLivro {
+        width: 275px;
+    }
+
+    #contadora {
+        position: relative;
+        left: 10px;
+        top: 10px;
+        display: flex;
+        height: 3%;
+        width: 100%;
+    }
+
+    .boxNewBookC #contadora p {
+        color: #087F97;
+        font-size: 1em;
+        font-weight: bold;
+        margin-right: 25%;
+    }
+
+
+    .boxNewBookC .quad {
+        position: relative;
+        margin-right: -60px;
+        left: 10px ;
+        top: 10px ;
+        height: 47px ;
+        width: 52px;
+    }
+
+    .fundo {
+        position: absolute;
+        height: 100vh;
+        z-index: 1;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.534);
+    }
+
+    .boxNewBookC .opsClass {
+        left: 5px;
+        top: 170px;
+        z-index: 10;
+    }
+
+    .boxNewBookC .opsClass .imgC {
+        height: 50px ;
+        width: 53px ;
+    }
+
+    .boxNewBookC .boxGend {
+        width: 90vw;
+        height: 300px;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    .boxNewBookC .Genero {
+        font-size: 1em;
+        height: 40px;
+        width: 50%;
+        animation: none;
+    }
+
+    .boxNewBookC .salvaLivro {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -100px;
+        right: -20px;
+    }
+}
+
+
+
+
+@keyframes abrir {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}
+
+@keyframes fechar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}

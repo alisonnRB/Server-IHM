@@ -1,0 +1,280 @@
+.option {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.option #titlePerfil {
+    margin-bottom: -100px;
+    width: 300px;
+    font-size: 1em;
+}
+
+.option option,
+.option select {
+    background-color: var(--botão-config);
+    border-radius: 30px;
+    height: 40px;
+    padding: 10px;
+    color: var(--letra-g);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.option input {
+    background-color: var(--botão-config);
+    border-radius: 30px;
+    height: 40px;
+    width: calc(100% - 13px);
+    padding: 3px;
+    padding-left: 10px;
+    color: var(--letra-g);
+}
+
+.option input::placeholder {
+    color: var(--letra-g);
+}
+
+.comport {
+    display: block;
+    width: 30%;
+}
+
+.com {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.com label {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: var(--letra);
+}
+
+#newSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#newSe {
+    height: 40px;
+    min-width: 80px;
+    border-radius: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: .9em;
+    color: white;
+    background-color: #A6A6A6;
+}
+
+#tema {
+    gap: 10px;
+}
+
+.tema {
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+
+#conta {
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sair,
+#excluir {
+    border-radius: 20px;
+    padding: 5px 2px;
+    width: 130px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.errorBOX {
+    color: red;
+    height: 1rem;
+}
+
+#sair {
+    background-color: var(--sair-conta);
+}
+
+#excluir {
+    background-color: var(--exclui-conta);
+}
+
+@media (max-width: 667px) and (min-width: 375px) and (orientation: portrait) {
+    .option {
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 20px; 
+        padding-bottom: 50px; 
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    /*estilo pra computadores com até 1920px*/
+    .option #titlePerfil {
+         
+        margin-bottom: -100px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1900px) {
+
+    /*estilo pra computadores com até 2560px*/
+    .option #titlePerfil {
+        margin:auto;
+        margin-bottom: -100px;
+        width: 300px;
+        font-size: 1em;
+    }
+    
+}
+
+@media (min-width:1200px) and (max-width:1899px){
+    .option #titlePerfil {
+        margin:auto;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 740px) and (orientation: portrait) {
+    .option {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px; 
+        padding-bottom: 50px;         
+    }
+}
+
+@media (max-width: 1200px) and (orientation: portrait){
+    .comport{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .com{
+        align-items: center;
+        text-align: center;
+    }
+
+    .option option, .option select {
+        background-color: var(--botão-config);
+        border-radius: 30px;
+        right: 0px;
+        position: relative;
+        height: 40px;
+        width: 150px; 
+        padding: 10px;
+        color: var(--letra-g);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #sair {
+        background-color: var(--sair-conta);
+        right: 0px;
+        position: relative;
+    }
+    
+    #excluir {
+        background-color: var(--exclui-conta);
+        right: 0px;
+        position: relative;
+    }
+
+    .tema {
+        border-radius: 50%;
+        right: 0px;
+        position: relative;
+        padding: 10px;
+        object-fit: scale-down;
+        cursor: pointer;
+    }
+
+    .com label {
+        font-size: 1.3em;
+        right: 0px;
+        position: relative;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        color: var(--letra);
+    }
+
+    .option input {
+        background-color: var(--botão-config);
+        border-radius: 30px;
+        height: 40px;
+        width: 100%;
+        padding: 3px;
+        padding-left: 10px;
+        position: relative;
+        right: 0px;
+        color: var(--letra-g);
+    }    
+    
+    #newSe {
+        height: 40px;
+        min-width: 80px;
+        border-radius: 30px;
+        padding-right: 15px;
+        position: relative;
+        right: 0px;
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: .9em;
+        color: white;
+        background-color: #A6A6A6;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1366px) {
+    .option #titlePerfil {
+        left: 541px;
+    }
+}
+
+@media (max-width:1200px) and (orientation: landscape){
+    .comport {
+        width: 42%;
+        text-align: center;
+    }
+
+    .option input {
+        text-align: center;
+    }
+    .com label {
+        margin-left: 0px;
+    }
+    #tema {
+        margin:auto
+    }
+    #conta {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    .option{
+        position: relative;
+        top: 30px;
+    }    
+}

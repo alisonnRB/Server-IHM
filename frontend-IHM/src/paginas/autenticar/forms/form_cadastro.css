@@ -1,0 +1,144 @@
+.fundoAWAIT {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.918);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pan{
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin-top: 5px;
+}
+.pan .form_pass{
+    height: 100%;
+    width: 100%;
+}
+
+.visualizando{
+    height: 20px;
+    width: 20px;
+    margin-left: -20px;
+    position: relative;
+    right: 10px;
+    bottom: 7px;
+    cursor: pointer;
+}
+
+.fundoAWAIT.err {
+    box-shadow: inset 0px 0px 80px 0px red;
+    animation: alert .5s linear;
+}
+
+.fundoAWAIT .content-load {
+    animation: none;
+    position: absolute;
+    bottom: calc(50% - 40px);
+    z-index: 10;
+}
+
+.fundoAWAIT .content-load.vira {
+    animation: virar .5s linear;
+}
+
+.certinho {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #00647E;
+
+}
+
+.certinho.vire {
+    display: inherit;
+    animation: virar-response linear 1s;
+}
+
+.erradinho.vire {
+    display: inherit;
+    animation: virar-response linear 1s;
+}
+
+.erradinho {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #FF3B3C;
+}
+
+.msgC {
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    margin-top: 170px;
+    color: #164452;
+
+    animation: surge ease 1s;
+}
+
+
+@keyframes virar {
+    0% {
+        transform: rotateX(0);
+    }
+
+    50% {
+        z-index: 0;
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes virar-response {
+    0% {
+        transform: rotateX(0);
+    }
+
+    25% {
+        z-index: 15;
+    }
+
+    50% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        z-index: 15;
+        transform: rotateX(360deg)
+    }
+}
+
+@keyframes alert {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px red;
+    }
+
+    25% {
+        box-shadow: inset 0px 0px 80px 0px red;
+    }
+
+    50% {
+        box-shadow: inset 0px 0px 00px 0px red;
+    }
+
+    75% {
+        box-shadow: inset 0px 0px 80px 0px red
+    }
+}

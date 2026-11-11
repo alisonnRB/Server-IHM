@@ -1,0 +1,162 @@
+#barra {
+    display: block;
+    height: 100%;
+    width: 7%;
+    background-color: var(--barra);
+    z-index: 100;
+}
+
+#barra img {
+    height: 45%;
+    width: 55%;
+    object-fit: fill;
+}
+
+
+
+.optionP {
+    height: calc(100% / 6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optionP:hover {
+    background-color: var(--hover-barra);
+
+}
+
+#barra .msg-new{
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    font-size: .9em;
+    bottom: 25%;
+    left: 15%;
+    margin-left: -25px;
+}
+
+
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+
+    #barra {
+      
+        height: 50px;
+        width: 10%;
+        
+    }
+
+    #barra img {
+        height: 50%;
+        width: 35%;
+    }
+    
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+    #barra {
+        height: 90px;
+        width: 100px;
+    }
+
+    #barra img {
+        height: 50%;
+        width: 50%;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+    #barra{
+        width: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    #barra {
+        height: 90px;
+        width: 10%;
+    }
+
+    #barra img {
+        height: 50%;
+        width: 35%;
+    }
+
+   
+
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    #barra {
+        height: 90px;
+        width: 10%;
+    }
+
+    #barra img {
+        height: 50%;
+        width: 50%;
+    }
+
+    
+}
+
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    /*estilo pra computadores com até 1920px*/
+    #barra img {
+        height: 45%;
+        width: 65%;
+        object-fit: fill;
+    }
+}
+
+@media (orientation: portrait) {
+    
+    #barra {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .optionP {
+        height: 100%;
+        width: calc(100vw / 6);
+    }
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+    #barra {
+        display: block;
+        height: 100%;
+        z-index: 100;
+    }
+    
+
+    .optionP {
+        height: calc(100% / 6);
+        width: 100%;
+    }
+}
+
+@media (min-width: 1900px){
+    .optionP{
+        width: 100%;
+    }
+}

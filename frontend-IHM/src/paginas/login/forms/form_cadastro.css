@@ -1,0 +1,156 @@
+#fechar{
+    cursor: pointer;
+}
+@media screen and (min-width: 1199px){
+
+.field_cad{
+    height: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #66BFD1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: -25px;
+    z-index: 1;
+    animation: aparece 1.5s;
+}
+#infos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    font-size: 2em;
+    padding-right: 160px;
+}
+.cad{
+    padding-left: 8px;
+    border-radius: 10px;
+    height: 40px; ;
+    width: 350px;
+}
+.cad::placeholder{
+    color: #66BFD1 ;
+}
+.cad_button{
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+input.cad{
+    color:#66BFD1;
+}
+#box_cadastro{
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+    animation: aparece 1.5s;
+}
+.Error_msg{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #000000;
+}
+.Error_msg p{
+    font-size: 1.5rem;
+}
+@keyframes aparece {
+    0%{opacity: 0; bottom: 600px;}
+    80%{bottom: -25px;}
+    100%{opacity: 1; }
+}
+}
+@media screen and ((min-width: 320px) and (max-width: 414px)){
+    #box_cadastro form{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #box_cadastro{
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        z-index: 1;
+        animation: aparece 1.5s;
+        top: -10%;
+        
+
+    }
+    .field_cad{
+        height: 100%;
+        width: 90%;
+        border-radius: 20px;
+        background-color: #66BFD1;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
+        position: absolute;
+        bottom: -25px;
+        z-index: 1;
+        animation: aparece 1.5s;
+        
+    }
+    #infos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6.5%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    h1{
+        font-size: 1.5em;
+        padding-right: 40%;
+        padding-left: 5%;
+
+    }
+    span p{
+        display: flex;
+    }
+    .field_cad span{
+        padding-top: 4%;
+        
+    }
+    .cad{
+
+        padding-left: 8px;
+        border-radius: 10px;
+        height: 10%; 
+        width: 80%;
+    }
+    .cad::placeholder{
+        color: #66BFD1 ;
+    }
+    .cad_button{
+        cursor: pointer;
+        color: white;
+        background-color: blue;
+        height: 40px;
+        width: 100px;
+
+    }
+    input.cad{
+        color:#66BFD1;
+    }
+    .Error_msg{
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 0, 0);
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: #000000;
+    }
+    .Error_msg p{
+        font-size: 1.5rem;
+    }
+    
+}

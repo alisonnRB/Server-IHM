@@ -1,0 +1,14 @@
+{
+    "en": {
+        "nome": "NAME: ",
+        "continue": "CONTINUE"
+    },
+    "pt": {
+        "nome": "NOME: ",
+        "continue": "CONTINUAR"
+    },
+    "es": {
+        "nome": "NOMBRE: ",
+        "continue": "CONTINUAR"
+    }
+}

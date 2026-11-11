@@ -1,0 +1,35 @@
+{
+    "en": {
+        "seguiu": "Started following you!",
+        "curtiu": "liked your book!",
+        "comentou": "Commented on your Book!",
+        "curti_coment": "Liked your comment on a book!",
+        "curti_publi": "Liked your Post!",
+        "curti_coment_publi": "Liked your Comment on a Post!",
+        "reply": "Responded to your comment!",
+        "M_Publi": "Commented on your post!",
+        "novi": "Do you have any news!!"
+    },
+    "pt": {
+        "seguiu": "Começou a seguir você!",
+        "curtiu": "curtiu seu livro!",
+        "comentou": "Comentou no seu Livro!",
+        "curti_coment": "Curtiu seu Comentário em um livro!",
+        "curti_publi": "Curtiu sua Publicação!",
+        "curti_coment_publi": "Curtiu seu Comentário em uma Publição!",
+        "reply": "Respondeu seu comentario!",
+        "M_Publi": "Comentou na sua publicação!",
+        "novi": "Tem novidades!!"
+    },
+    "es": {
+        "seguiu": "¡Empecé a seguirte!",
+        "curtiu": "¡gustó tu libro!",
+        "comentou": "Comentó en tu libro!",
+        "curti_coment": "¡gustó tu comentario sobre un libro!",
+        "curti_publi": "¡gustó tu publicación!",
+        "curti_coment_publi": "¡gustó tu comentario en una publicación!",
+        "reply": "¡Respondí a tu comentario!",
+        "M_Publi": "¡Comentó tu publicación!",
+        "novi": "¡¡Tienes novedades!!"
+    }
+}

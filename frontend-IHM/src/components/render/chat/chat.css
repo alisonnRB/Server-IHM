@@ -1,0 +1,105 @@
+.chat {
+    background-color: var(--chat-bg);
+    height: calc(100vh + 200px);
+}
+
+.chat #titlePerfil {
+    margin-bottom: -100px;
+    width: 300px;
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .chat button.main {
+        display: none;
+    }
+    .chat {
+        background-color: var(--chat-bg);
+        height: calc(100vh + 100px);
+    }
+}
+
+.coming{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.coming img{
+    height: 350px;
+}
+
+@media (max-width: 576px) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .chat #titlePerfil {
+        display: none;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+    .chat #titlePerfil {
+        display: none;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .chat #titlePerfil {
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .chat #titlePerfil {
+        display: none;
+    }
+
+
+}
+
+@media (orientation: portrait) {
+    .contentMSG {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat {
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    /*estilo pra computadores com até 1920px*/
+    .chat #titlePerfil {
+        
+        margin-bottom: -100px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+
+    .chat #titlePerfil {
+        margin:auto;
+        margin-bottom: -100px;
+        width: 300px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1899px){
+    .chat #titlePerfil {
+        margin:auto;
+    }
+}

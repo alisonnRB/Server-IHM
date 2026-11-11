@@ -1,0 +1,84 @@
+.boxWarning{
+    background-color: rgba(255, 255, 255, 0.384);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning{
+    display: block;
+    height: 50vh;
+    width: 40vw;
+    background-color: var(--deleta-cap);
+    border-radius: 5px;
+}
+
+.titleWarning{
+    height: 25%;
+    background-color: var(--exclui-conta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.inputBox{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox .wPass{
+    margin-top: 40px;
+    width: 75%;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+}
+
+.wMSG{
+    color: red;
+}
+
+.warningBts{
+    height: 30%;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+
+.Wbt{
+    width: 140px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Wbt.dell{
+    background-color: var(--exclui-conta);
+}
+.Wbt.canc{
+    background-color: var(--sair-conta);
+}
+
+@media (min-width: 1900px) {
+    .warningBts{
+        height: 30%;
+        align-items: center;
+        justify-content: space-evenly ;
+    }
+}

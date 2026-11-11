@@ -1,7 +1,9 @@
 version: "3.8"
 services:
   app:
-    build: .
+    build:
+      context: backend-IHM
+      dockerfile: ./Dockerfile
     ports:
       - "8080:80" # Porta da aplicação
     depends_on:

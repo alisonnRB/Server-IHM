@@ -1,0 +1,44 @@
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg);
+    height: 90px;
+    width: calc(93% - 10px);
+    padding-left: 7.0%;
+    padding-right: 11px;
+}
+
+#logoH {
+    right: 0.5%;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+
+    #logoH {
+        position: relative;
+        
+    }
+
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    header {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) {
+    /* Estilos para dispositivos em modo paisagem */
+    header {
+        width: 100vw;
+        padding: 0;
+    }
+
+}

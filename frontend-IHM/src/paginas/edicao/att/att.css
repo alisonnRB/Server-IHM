@@ -1,0 +1,753 @@
+.boxNewBookC {
+    height: 100%;
+    width: 100%;
+}
+
+.formCreateBook {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 100px);
+    width: 100%;
+}
+
+.capaDoLivro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+}
+
+.capaDoLivro #fileBoxC {
+    height: 100%;
+    width: 100%;
+}
+
+.capaDoLivro .custom-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: #BACFD1;
+    background-image: url('../../../imgs/MaisBranco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 75%;
+}
+
+.custom-input.dark{
+    background-image: url('../../../imgs//MaisBranco-dark.png') !important;
+    background-color: #01181B !important;
+}
+
+.quad {
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+    top: 120px;
+    height: 70px;
+    width: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid black 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.fundo {
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: var(--filtro);
+}
+
+.opsClass {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+    width: 110px;
+    overflow: hidden;
+}
+
+.opsClass .imgC {
+    cursor: pointer;
+    height: 70px;
+    width: 75px;
+    z-index: 1;
+    border-radius: 7px;
+
+    animation: abrir .3s linear reverse;
+}
+
+.opsClass .imgC.close {
+    animation: fechar .33s linear;
+}
+
+.capaDoLivro input[type='file'] {
+    display: none;
+}
+
+.Infos {
+    height: 100%;
+    width: 65%;
+}
+
+.Infos #Nome {
+    height: 17%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+.Infos #Nome .nomeDoLivro {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    align-items: center;
+}
+
+.Infos #Nome .livroNome {
+    border-bottom: solid 1px #087F97;
+    padding-left: 20px;
+    font-size: 2em;
+    height: 100%;
+    width: 80%;
+}
+
+.Infos #Nome #dell {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.Infos #Nome #dell img {
+    cursor: pointer;
+    height: 60%;
+    width: 45%;
+    object-fit: fill;
+}
+
+.GenBoxL {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 70%;
+    width: 40%;
+}
+
+#selectColor {
+    position: absolute;
+    right: 34%;
+    top: 32%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--letra);
+}
+
+#selectColor .contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contain img {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.doisCor {
+    position: relative;
+    top: 12px;
+}
+
+.ocupa {
+    height: 10px;
+    width: 10px;
+}
+
+#selectColor .circuloDellCor {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    background-image: url('../../../imgs/sair.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#selectColor #head {
+    height: 40px;
+    width: 40px;
+    background-color: var(--background) !important;
+    cursor: pointer;
+}
+
+#head::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+#head::-moz-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+#contadora {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    display: flex;
+    height: 3%;
+    width: 100%;
+}
+
+#contadora p {
+    color: #087F97;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 25%;
+}
+
+.caixaInter {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.salvaLivro {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.salvaLivro button,
+#cancel {
+    all: unset;
+    background-color: none;
+    cursor: pointer;
+    height: 10%;
+    cursor: pointer;
+    color: #087F97;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+#cancel {
+    position: absolute;
+    bottom: 0;
+    right: 600px;
+    color: #BACFD1;
+}
+
+#cancel:hover {
+    color: red;
+}
+
+.trans {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff09;
+}
+
+
+
+@media (orientation: portrait) {
+    #selectColor {
+        position: relative;
+        right: -10px;
+        top: 75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .caixaInter {
+        position: relative;
+        bottom: 0;
+        right: -50vw;
+        gap: 20px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .Infos #Nome #dell {
+        position: relative;
+        top: -290px;
+        height: 100%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    #cancel {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) and (orientation: landscape){
+    .quad {
+        left: 10px;
+        top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+    .boxNewBookC #selecao {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+    .Infos #Nome #dell {
+        top: -430px;
+    }
+
+    .caixaInter {
+        right: -75vw;
+    }
+    
+    #cancel {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+    #selectColor .contain {
+        margin-right: 100px;
+    }
+
+    .salvaLivro button, #cancel {
+        margin-right: 25px;
+    }
+
+    .capaDoLivro #fileBoxC {
+        height: 100vh;
+        width: 100%;
+    }
+    .quad {
+        left: 10px;
+        top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .opsClass {
+        position: absolute;
+        left: 13px;
+        top: 60px;
+    }
+
+    .opsClass .imgC {
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    #cancel {
+        display: none;
+    }
+
+    .boxNewBookC #selecao{
+        width: 200px;
+    }
+
+    .boxNewBookC .boxGend{
+        height: 200px;
+        width: 200px;
+        font-size: .5em;
+    }
+
+    .boxNewBookC .GenBoxL {
+        display: flex;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        height: 70%;
+        width: 40%;
+        gap: 2px;
+    }
+
+    .caixaInter {
+        margin-right: 10px;
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .boxNewBookC center{
+        height: 0;
+    }
+
+    .boxNewBookC center h1 {
+        font-size: .5em;
+    }
+
+    .boxNewBookC #selectColor {
+        position: absolute;
+        right: 20px;
+        top: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boxNewBookC .toggle {
+
+        min-width : 50px;
+        min-height : 22px;
+
+    }
+            
+    /* After slide changes */
+    .boxNewBookC .toggle:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .boxNewBookC .checkbox:checked + .toggle::after {
+        left : 29px; 
+    }
+    
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+    .Infos #Nome #dell {
+        top: -290px;
+    }
+
+    .caixaInter {
+        right: -75vw;
+    }
+    
+    #cancel {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)  and (orientation: landscape) {
+    #selectColor .contain {
+        margin-right: 50px;
+    }
+
+    .salvaLivro button, #cancel {
+        margin-right: 25px;
+    }
+    
+    .capaDoLivro #fileBoxC {
+        height: 100vh;
+        width: 100%;
+    }
+    .quad {
+        left: 10px;
+        top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .opsClass {
+        position: absolute;
+        left: 13px;
+        top: 60px;
+    }
+
+    .opsClass .imgC {
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    #cancel {
+        display: none;
+    }
+
+    .boxNewBookC #selecao{
+        font-size: 1.2em;
+        width: 200px;
+    }
+
+    .boxNewBookC .boxGend{
+        height: 200px;
+        width: 200px;
+        font-size: .5em;
+    }
+
+    .boxNewBookC .GenBoxL {
+        display: flex;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        height: 70%;
+        width: 40%;
+        gap: 2px;
+    }
+
+    .caixaInter {
+        position: absolute;
+        bottom: 50px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .boxNewBookC center{
+        height: 0;
+    }
+
+    .boxNewBookC center h1 {
+        font-size: .5em;
+    }
+
+    .boxNewBookC #selectColor {
+        position: absolute;
+        right: 20px;
+        top: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boxNewBookC .toggle {
+
+        min-width : 50px;
+        min-height : 22px;
+
+    }
+            
+    /* After slide changes */
+    .boxNewBookC .toggle:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .boxNewBookC .checkbox:checked + .toggle::after {
+        left : 29px; 
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait){
+    .Infos #Nome #dell {
+        top: -500px;
+    }
+
+    .caixaInter {
+        right: -75vw;
+    }
+    
+    #cancel {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px)  and (orientation: landscape) {
+    .Infos #Nome #dell {
+        height: 60%;
+    }
+    #selectColor .contain {
+        margin-right: 50px;
+    }
+
+    .salvaLivro button, #cancel {
+        margin-right: 26px;
+    }
+    .capaDoLivro #fileBoxC {
+        height: 100vh;
+        width: 100%;
+    }
+    .quad {
+        left: 10px;
+        top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .opsClass {
+        position: absolute;
+        left: 13px;
+        top: 60px;
+    }
+
+    .opsClass .imgC {
+        min-height: 40px;
+        min-width: 40px;
+    }
+
+    #cancel {
+        display: none;
+    }
+
+    .boxNewBookC #selecao{
+        width: 200px;
+    }
+
+    .boxNewBookC .boxGend{
+        height: 200px;
+        width: 200px;
+        font-size: .5em;
+    }
+
+    .boxNewBookC .GenBoxL {
+        display: flex;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        height: 70%;
+        width: 40%;
+        gap: 2px;
+    }
+
+    .caixaInter {
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .boxNewBookC center{
+        height: 0;
+    }
+
+    .boxNewBookC center h1 {
+        font-size: .5em;
+    }
+
+    .boxNewBookC #selectColor {
+        position: absolute;
+        right: 20px;
+        top: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .boxNewBookC .toggle {
+
+        min-width : 50px;
+        min-height : 22px;
+
+    }
+            
+    /* After slide changes */
+    .boxNewBookC .toggle:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .boxNewBookC .checkbox:checked + .toggle::after {
+        left : 29px; 
+    }
+
+}
+
+
+@media (min-width: 1201px) and (orientation: portrait) {
+    .caixaInter {
+        right: -75vw;
+    }
+
+    
+    #cancel {
+        display: none;
+    }
+}
+
+
+@keyframes abrir {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}
+
+@keyframes fechar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+    .Infos #Nome #dell img {
+        cursor: pointer;
+        height: 60%;
+        width: 90%;
+        object-fit: fill;
+    }
+}
+
+
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    .capaDoLivro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 26.5%;
+        height: 115%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    .capaDoLivro .custom-input {
+        margin-left: 210px;
+        width: 50%;
+    }
+}

@@ -1,0 +1,457 @@
+.PageLer {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100%;
+    
+}
+
+.PageLer header {
+    background-color: var(--background);
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+}
+
+.PageLer header #logoP {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: 40px;
+    bottom: 12px;
+}
+
+.PageLer #CurtiL {
+    height: 100%;
+    width: 300px;
+    position: relative;
+    right: 70px;
+    display: block;
+}
+
+#CurtiL .tituloBox {
+    height: 70%;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+    color: var(--letra);
+}
+
+#CurtiL #BOXCURTI {
+    height: 40%;
+    width: 119%;
+    align-items: center;
+    gap: 20px;
+}
+
+#BOXCURTI .BoxVisu {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    background-color: var(--background);
+    align-items: start;
+
+}
+
+#BOXCURTI .BoxVisu span {
+    cursor: pointer;
+    background-color: #C4BFB2;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;    
+}
+
+#BOXCURTI .BoxVisu span img {
+    height: 20px;
+    width: 35px;
+
+    position: relative;
+}
+
+#BOXCURTI .BoxVisu span:last-child {
+    position: static;
+}
+
+
+
+.BOXLER {
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.PageLer .filtro {
+    position: fixed;
+    z-index: 10;
+    left: 20%;
+    top: 100px;
+    height: 100px;
+    width: 60%;
+    background: linear-gradient(180deg, var(--background) 0%, rgba(255, 255, 255, 0) 50%); 
+    pointer-events: none;
+}
+
+.infosAutor {
+    height: 400px;
+    width: 200px;
+    position: fixed;
+    right: 2%;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.infosAutor #perfil {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.infosAutor p {
+    font-weight: bold;
+    color: var(--letra);
+    -webkit-text-stroke: .5px black;
+}
+
+.infosAutor .btSeguir {
+    height: 20px;
+    min-width: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    color:var(--letra);
+    font-weight: bold;
+    border: 1px black solid;
+    -webkit-text-stroke: .5px black;
+}
+
+.curtiS,
+.favS {
+    animation: shake 1s ease;
+}
+
+.curtiN {
+    animation: curtind .8s ease;
+}
+
+.favN {
+    animation: girar 1.5s ease;
+}
+
+.alerts{
+    margin-left: 45%;
+    background-color: #FF7070;
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.alerts img{
+    margin-left: 10px;
+    height: 80%;
+}
+
+.alerts p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.fundoAlert{
+    z-index: 210;
+    background-color: var(--filtro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaAlert{
+    height: 50vh;
+    width: 40vw;
+    background-color: var(--letra-p);
+    display: block;
+    border: solid 2px #FF7070;
+    border-radius: 20px;
+}
+
+.titleAlert{
+    background-color: #FF7070;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.titleAlert img{
+    height: 80%;
+}
+
+.contentAlert{
+    gap: 30px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AlertBT{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--letra);
+}
+
+.AlertBT:hover{
+    background-color: #ff7070a1;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes curtind {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.4, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+
+
+
+@media (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .PageLer header {
+        position: absolute;
+        padding-bottom: 100px;
+    }
+
+
+
+    .PageLer header #logoP {
+        display: none;
+    }
+
+    .PageLer #CurtiL {
+        width: 100%;
+        right: 0;
+    }
+
+    #CurtiL .tituloBox {
+        padding-left: 10px;
+        text-align: center;
+        justify-content: center;
+        word-break: break-all;
+        width: 100%;
+    }
+
+    #BOXCURTI .BoxVisu.fav {
+        visibility: visible;
+    }
+
+    #CurtiL #BOXCURTI {
+        justify-content: center;
+        margin: auto;
+        gap: 20px;
+        height: 40%;
+        width: 90px;
+    }
+
+    #BOXCURTI .BoxVisu {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        background-color: var(--background);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #BOXCURTI .BoxVisu span {
+        cursor: pointer;
+        background-color: #C4BFB2;
+        height: 90%;
+        width: 100%;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .infosAutor {
+        height: 100px;
+        width: 200px;
+        position: absolute;
+        right: 40vw;
+        top: 100px;
+        flex-direction: row;
+        z-index: 200;
+    }
+
+    .infosAutor #perfil {
+        height: 60px;
+        width: 60px;
+    }
+
+
+
+    .infosAutor .btSeguir {
+        height: 20px;
+        min-width: 70px;
+        font-size: .8em;
+    }
+
+    .PageLer .filtro {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) and (orientation:portrait) {
+    .PageLer .btFloat {
+        display: none;
+    }
+
+    .infosAutor {
+        right: 20vw;
+        margin-right: 80px;
+    }
+
+    .infosAutor p {
+        display: none;
+    }
+
+    #BOXCURTI .BoxVisu span {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .ps{
+        display: none;
+    }
+    #BOXCURTI .BoxVisu span img {
+        margin: auto;
+    }
+
+    .PageLer #CurtiL {
+        width:80%;
+        right: 0;
+    }
+
+    .alerts {
+        margin-left: 0%;
+        width: 40px;
+        margin-top: 75px;
+    }
+    .alerts p {
+        display: none;
+    }
+    .alerts img {
+        margin-left: -5px;
+        top: 200px;
+    }
+    #CurtiL .tituloBox {
+        font-size: 1.5em;
+    }
+
+    #BOXCURTI .BoxVisu span:last-child {
+        margin-right: 180px;
+    }
+}
+
+@media (min-width: 576px) and (max-width:1200px) {
+    #CurtiL #BOXCURTI {
+        width: 350px;
+    }
+    .alerts {
+        margin-left: 0%;
+
+    }
+    .PageLer #CurtiL {
+        width: 65%;
+    }
+    
+}
+@media (max-width: 1200px) and (orientation: landscape){
+
+}
+
+@media (max-width:1200px) and (orientation: landscape){
+    .infosAutor {
+        right: -5%;
+        top: 98px;
+    }
+
+    .infosAutor #perfil {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .alerts {
+        margin-left: 0%;
+        width: 40px;
+    }
+    .alerts p {
+        display: none;
+    }
+    .alerts img {
+        margin-left: -5px;
+    }
+    .PageLer #CurtiL {
+        width: 57%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    .infosAutor{
+        margin-right: 180px;
+    }
+    .alerts{
+        margin-top: 90px;
+    }
+}

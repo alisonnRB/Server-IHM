@@ -1,0 +1,432 @@
+.HOME {
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background: linear-gradient(130deg, #F9FBFB 20%, #B7CED3 80%);
+    padding-bottom: 20px;
+}
+
+.HOME .link {
+    height: 50px;
+    width: 35%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px -3px rgba(92, 101, 104, 0.397);
+}
+
+.apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.apresentation img {
+    height: 100%;
+    width: 65%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.junte {
+    cursor: pointer;
+    color: #00414A;
+    height: 100%;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.features {
+    height: 1000px;
+    width: 100vw;
+    margin-top: 100px;
+    background-image: url('../../imgs/fundo-paper.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.text-f {
+    height: 30%;
+    width: 100%;
+    position: relative;
+    top: 145px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.text-f h2 {
+    color: #022227;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.text-f .text_f {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.text_f p {
+    margin-top: 10px;
+    font-size: 1.6em;
+}
+
+.frases {
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+}
+
+.cont-frase {
+    width: calc(40% / 4);
+
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: none;
+}
+
+.cont-frase.anima {
+    display: flex;
+    animation: sobe-aparece 1s ease;
+}
+
+.cont-frase.anima1 {
+    display: flex;
+    animation: sobe-aparece 1.5s ease;
+}
+
+.cont-frase.anima2 {
+    display: flex;
+    animation: sobe-aparece 2s ease;
+}
+
+.cont-frase.anima3 {
+    display: flex;
+    animation: sobe-aparece 2.5s ease;
+}
+
+.catMain {
+    background-color: #00647E;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    object-fit: fill;
+
+}
+
+.cont-frase h4 {
+    font-weight: bold;
+    color: #022227;
+    text-align: center;
+}
+
+.cont-frase p {
+    text-align: center;
+}
+
+.novidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.content-novi {
+    height: 400px;
+    width: 70%;
+}
+
+.pc-novi,
+.text-novi {
+    width: 50%;
+}
+
+.pc-novi {
+    display: flex;
+    justify-content: center;
+}
+
+.pc-novi img {
+    object-fit: contain;
+    height: 70%;
+    width: 70%;
+
+    animation: pc 5s ease;
+}
+
+.text-novi {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+.text-novi img {
+    margin-right: 50px;
+    object-fit: contain;
+    height: 50%;
+    width: 90%;
+}
+
+.text-novi p {
+    padding-right: 20%;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.novi-email {
+    flex-direction: column;
+    align-items: center;
+}
+
+.novi-email label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.novi-email input {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 40px;
+    border-radius: 30px;
+    width: 550px;
+}
+
+.novi-email span {
+    align-items: center;
+}
+
+#envia {
+    height: 25px;
+    position: relative;
+    right: 30px;
+}
+
+@media (max-width: 992px) and (orientation: portrait) {
+    .apresentation {
+        padding-top: 50px;
+    }
+
+    .apresentation img {
+        width: 75%;
+    }
+
+    .HOME .link {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    .junte {
+        font-size: 1em;
+    }
+
+    .text_f p {
+        font-size: 1.2em;
+    }
+
+    .cont-frase {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+
+    .catMain {
+        height: 30px;
+        width: 30px;
+    }
+
+    .cont-frase h4 {
+        font-size: .6em;
+    }
+
+    .cont-frase p {
+        font-size: .6em;
+    }
+
+    .text-novi img {
+        margin-right: 0;
+        position: relative;
+        bottom: 100px;
+        left: 10px;
+        height: 40%;
+        width: 80vw;
+    }
+
+    .text-novi p {
+        display: none;
+    }
+
+    .pc-novi {
+        width: 100vw;
+    }
+
+    .pc-novi img {
+        margin-top: 60px;
+        margin-left: 90%;
+        width: 200%;
+    }
+
+    .novi-email {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+    .text-f h2 {
+        font-size: 2.0em;
+    }
+
+    .novidades {
+        height: 400px;
+    }
+
+    .text-novi img {
+        margin-right: 0px;
+    }
+
+    .text-novi p {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .novi-email input {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 80vw;
+    }
+
+    .pc-novi,
+    .text-novi {
+        width: 100%;
+    }
+
+    .pc-novi {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+    .text-f h2 {
+        font-size: 2.0em;
+    }
+
+    .novidades {
+        height: 400px;
+    }
+
+    .text-novi img {
+        margin-right: 0px;
+    }
+
+    .text-novi p {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .novi-email input {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 80vw;
+    }
+
+    .pc-novi,
+    .text-novi {
+        width: 100%;
+    }
+
+    .pc-novi {
+        display: none;
+    }
+
+    .HOME {
+        width: 99vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
+    .cont-frase {
+        width: calc(60% / 4);
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: -40px;
+    }
+
+    .cont-frase h4 {
+        font-size: 1.5em;
+    }
+
+    .cont-frase p {
+        font-size: 1em;
+    }
+
+    .catMain {
+        padding: 15px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+    .pc-novi img {
+        height: 100%;
+        width: 70%;
+    }
+
+    .text-novi img {
+        height: 60%;
+        width: 90%;
+    }
+}
+
+@keyframes sobe-aparece {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pc {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}

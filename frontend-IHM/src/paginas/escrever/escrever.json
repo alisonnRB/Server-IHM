@@ -1,0 +1,17 @@
+{
+    "en": {
+        "sinopse": "SYNOPSIS",
+        "cap": "CHAPTER ",
+        "novo": "NEW CHAPTER"
+    },
+    "pt": {
+        "sinopse": "SINOPSE",
+        "cap": "CAPÍTULO ",
+        "novo": "CAPÍTULO NOVO"
+    },
+    "es": {
+        "sinopse": "SINOPSIS",
+        "cap": "CAPÍTULO ",
+        "novo": "CAPITULO NUEVO"
+    }
+}

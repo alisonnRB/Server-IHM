@@ -1,0 +1,92 @@
+.boxNewBook {
+    display: block;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.boxNewBook header {
+    height: 100px;
+    background: rgb(104, 141, 237);
+    background: linear-gradient(75deg, rgba(104, 141, 237, 1) 0%, rgba(137, 176, 234, 1) 25%, rgba(214, 225, 241, 0.5914740896358543) 50%, rgba(148, 187, 233, 1) 75%, rgba(104, 141, 237, 1) 100%);
+}
+
+.boxNewBook header #logoH {
+    left: 0;
+    height: 100px;
+    width: 230px;
+}
+
+.ConfigBook {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px)  and (orientation: landscape) {
+    .boxNewBook {
+        display: block;
+        height: 96vh;
+        max-height: 99vh;
+        width: 99vw;
+        overflow: hidden;
+    }
+    .boxNewBook header{
+        display: none;
+    }
+
+    .ConfigBook {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    .boxNewBook {
+        display: block;
+        height: 96vh;
+        max-height: 99vh;
+        width: 99vw;
+        overflow: hidden;
+    }
+
+    .boxNewBook header{
+        display: none;
+    }
+
+    .ConfigBook {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
+    .boxNewBook {
+        display: block;
+        height: 96vh;
+        max-height: 99vh;
+        width: 99vw;
+        overflow: hidden;
+    }
+
+    .boxNewBook header{
+        display: none;
+    }
+
+    .ConfigBook {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

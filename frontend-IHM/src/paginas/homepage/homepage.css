@@ -1,0 +1,95 @@
+.boxHome{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+.pagina{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 90px);
+    width: 100%;
+}
+.boxOnPage{
+    overflow-y: scroll;
+    background-color: var(--background);
+    height: 100%;
+    width: 100%;
+}
+
+.content-notifica{
+    position: fixed;
+    right: 120px;
+    top: 120px;
+}
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+
+    .boxHome{
+        width: calc(100vw + 10px);
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+    .boxHome{
+        width: calc(100vw + 10px);
+    }
+ 
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+}
+@media  (max-width: 1200px) and (orientation: landscape){
+    .pagina{
+        height: calc(100%);
+    }
+}
+
+
+@media (min-width: 1201px) {
+    /* Estilos para dispositivos desktop (telas maiores) */
+
+}
+
+@media (orientation: portrait) {
+    .boxOnPage::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+@media (orientation: landscape) {
+    /* Estilos para dispositivos em modo paisagem */
+
+
+}
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    .boxHome{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    .pagina{
+        display: flex;
+        flex-direction: row;
+        height: calc(100% - 90px);
+        width: 100%;
+    }
+    .boxOnPage{
+        overflow-y: scroll;
+        background-color: var(--background);
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+}

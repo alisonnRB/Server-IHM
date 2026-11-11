@@ -1,0 +1,37 @@
+.not-card{
+    height: 70px;
+    width: 70%;
+    margin-bottom: 10px;
+    border-bottom: solid white 1px;
+    padding-bottom: 10px;
+}
+#linky{
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#linky img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.not-content{
+    display: block;
+    width: 80%;
+    color: white;
+}
+
+.not-nome{
+    height: 35%;
+    align-items: center;
+}
+
+.not-not{
+    height: 65%;
+    align-items: center;
+}

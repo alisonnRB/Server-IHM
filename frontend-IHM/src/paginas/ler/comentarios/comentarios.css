@@ -1,0 +1,238 @@
+#boxComent{
+    width: 100%;
+    display: block;
+}
+
+#boxComent .campoComent{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#boxComent .campoComent input{
+    background-color: var(--barra-busca) !important;
+    padding-left: 20px;
+    padding-right: 70px;
+    height: 90%;
+    min-width: calc(100% - 20px);
+    position: relative;
+    left: 30px;
+    border-radius: 30px;
+    color: var(--letra);
+}
+
+#boxComent .campoComent input::placeholder{
+    color: var(--letra);
+}
+#enviaCom{
+    height: 35px;
+    width: 60px;
+    position: relative;
+    right: 30px;
+    cursor:pointer;
+}
+
+#boxComent .comentarios{
+    display: block;
+    margin-top: 10px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+}
+.comentarios .comentaP{
+    padding-top: 10px;
+    border-top: solid #EBECF0 2px;
+    display: block;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.comentarios .replyBOX{
+    display: none;
+    height: 0;
+    margin-left: 5%;
+
+    transition: all 1s ease;
+}
+
+.comentarios .replyBOX.aparece{
+    display: block;
+    height: 100%;
+}
+
+.seeReply{
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: -1em;
+}
+.comentarios .interval{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7em;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+
+    #boxComent .campoComent{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #boxComent .campoComent input{
+        background-color: #EBECF0;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 90%;
+        min-width: calc(80% - 60px);
+        width: 80%;
+        position: relative;
+        left: 30px;
+        border-radius: 30px;
+    }
+    #enviaCom{
+        height: 35px;
+        width: 60px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+    
+}
+
+@media (orientation: portrait){
+    #boxComent .campoComent{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #boxComent .campoComent input{
+        background-color: #EBECF0;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 90%;
+        min-width: calc(80% - 60px);
+        width: 80%;
+        position: relative;
+        left: 30px;
+        border-radius: 30px;
+    }
+    #enviaCom{
+        height: 35px;
+        width: 40px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) and (orientation: landscape){
+    #boxComent .campoComent{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #boxComent .campoComent input{
+        background-color: #EBECF0;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 90%;
+        min-width: calc(80% - 60px);
+        width: 80%;
+        position: relative;
+        left: 30px;
+        border-radius: 30px;
+    }
+    #enviaCom{
+        height: 35px;
+        width: 40px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
+    #boxComent .campoComent{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #boxComent .campoComent input{
+        background-color: #EBECF0;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 90%;
+        min-width: calc(80% - 60px);
+        width: 80%;
+        position: relative;
+        left: 30px;
+        border-radius: 30px;
+    }
+    #enviaCom{
+        height: 35px;
+        width: 40px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+}
+
+@media (min-width: 1201px) and (orientation: landscape) {
+    #boxComent .campoComent{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    #boxComent .campoComent input{
+        background-color: #EBECF0;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 90%;
+        min-width: calc(80% - 60px);
+        width: 80%;
+        position: relative;
+        left: 30px;
+        border-radius: 30px;
+    }
+    #enviaCom{
+        height: 35px;
+        width: 40px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+}
+
+@media (min-width: 1900px) {
+    /*estilo pra computadores com até 2560px*/
+    #enviaCom{
+        height: 30px;
+        width: 35px;
+        position: relative;
+        right: 30px;
+        cursor:pointer;
+    }
+}

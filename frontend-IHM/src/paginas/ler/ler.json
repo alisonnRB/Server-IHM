@@ -1,0 +1,41 @@
+{
+    "en": {
+        "load": "BOOK'S NAME",
+        "fav": "FAVORITE",
+        "curti": "LIKE",
+        "seguir": "Follow",
+        "seguindo": "Following",
+        "autor": "Author",
+        "alert": "REPORT",
+        "content": "Inappropriate content",
+        "plagio": "Plagiarism",
+        "viola": "Copyright Infringement",
+        "ilegal": "incitement to illegality"
+    },
+    "pt": {
+        "load": "NOME DO LIVRO",
+        "fav": "FAVORITAR",
+        "curti": "CURTIR",
+        "seguir": "Seguir",
+        "seguindo": "Seguindo",
+        "autor": "Autor",
+        "alert": "REPORTAR",
+        "content": "Conteúdo inapropriado",
+        "plagio": "Plágio",
+        "viola": "Violação dos Direitos Autorais",
+        "ilegal": "incitação a ilegalidade"
+    },
+    "es": {
+        "load": "NOMBRE DEL LIBRO",
+        "fav": "FAVORITO",
+        "curti": "ME GUSTA",
+        "seguir": "Seguir",
+        "seguindo": "Seguiente",
+        "autor": "Autor",
+        "alert": "REPORTAR",
+        "content": "Contenido inapropiado",
+        "plagio": "Plagio",
+        "viola": "Infracción de copyright",
+        "ilegal": "incitación a la ilegalidad"
+    }
+}

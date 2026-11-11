@@ -1,0 +1,259 @@
+.barraCap {
+    background-color: var(--fundo-barra-cap);
+    height: 100px;
+    width: calc(100% - 102px);
+    max-width: calc(100% - 102px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.barraCap::-webkit-scrollbar {
+    height: 5px;
+}
+.barraCap #content{
+    min-width: 200px;
+    width: 200px;
+    height: 100%;
+    min-height: 100%;
+    border-right: solid #087f9744 0.5px;
+}
+.barraCap #content span {
+    position: relative;
+    background-color: var(--fundo-barra-cap);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2em;
+    color: var(--letra-g);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.barraCap .SIN{
+    min-width: 200px;
+    width: 200px;
+    height: 100%;
+    min-height: 100%;
+    color: var(--letra-g);
+    border-right: solid #087f9744 0.5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.barraCap .SIN.Selecionado{
+    background-color: var(--card-edita-livro);
+    color: white;
+    border-right: white solid 1px;
+}
+.barraCap #content span.Selecionado{
+    background-color: var(--card-edita-livro);
+    color: white;
+    border-right: white solid 1px;
+}
+
+#content{
+    overflow: hidden;
+}
+.caixaMais {
+    background-color: var(--fundo-barra-cap);
+    position: absolute;
+    right: 0;
+    top: 16%;
+    height: 101px;
+    width: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.caixaMais img {
+    cursor: pointer;
+    height: 50%;
+    width: 50%;
+}
+.abaApaga{
+    display: none;
+    position: relative;
+    bottom: 155px;
+    left: 50%;
+    z-index: 20;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    background-color: var(--apagar-cap);
+    align-items: end;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 48px;
+}
+.abaApaga img{
+    position: relative;
+    bottom: 9px;
+    right: 15px;
+    height: 20px;
+    width: 20px;
+    
+}
+.abaApaga.Selecionado{
+    display: flex;
+    animation: aparece .5s ease;
+}
+.abaApaga.some{
+    
+    animation: some .5s ease;
+}
+
+@keyframes aparece {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes some {
+    0%{
+        transform: translateY(0);display: flex;
+    }
+    100%{
+        transform: translateY(-50px);display: none;
+    }
+}
+#janela{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--filtro);
+    height: 100vh;
+    width: 100vw;
+}
+#janela .Conteudo{
+    background-color: var(--deleta-cap);
+    height: 300px;
+    width: 550px;
+    border-radius: 8px;
+}
+.Conteudo #message{
+    background-color: var(--exclui-conta);
+    height: 35%;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.Conteudo .BTcomport{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    height: 65%;
+}
+.Conteudo .BTcomport .BTS{
+    height: 50px;
+    width: 150px;
+    border-radius: 60px;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Conteudo .BTcomport .BTS.s{
+    background-color: var(--exclui-conta);
+}
+.Conteudo .BTcomport .BTS.s:hover{
+    background-color: var(--exclui-conta-hover);
+}
+.Conteudo .BTcomport .BTS.n{
+    background-color: #9EB0B2;
+}
+.Conteudo .BTcomport .BTS.n:hover{
+    background-color: #9eb0b283;
+}
+
+.caixaINT{
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    height: 80px;
+    width: 150px;
+}
+
+.prontiCAP{
+    position: relative;
+    bottom: 80px;
+    left: 86%;
+    z-index: 100;
+    border-radius: 100%;
+    background-image: url('../../../imgs/marcado.png');
+    background-size: 190% 100%;
+    background-position: center;
+    background-color: #087F97;
+    height: 20px;
+    width: 20px;
+}
+
+.prontiCAP.dark{
+    background-image: url('../../../imgs/marcado-dark.png');
+    background-size: 100% 100%;
+}
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    #janela .Conteudo{
+        background-color: #f5f5f5;
+        height: 300px;
+        width: 100vw;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .caixaINT{
+        top: 30%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .caixaINT{
+        top: 30%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .caixaINT{
+        top: 30%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+    .caixaINT{
+        top: 60%;
+    }
+
+    
+    .caixaMais {
+        top: 100px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+    .caixaINT{
+        top: 48%;
+    }
+
+    .caixaMais {
+        top: 100px;
+    }
+}

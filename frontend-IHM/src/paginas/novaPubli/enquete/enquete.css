@@ -1,0 +1,363 @@
+.enquete{
+    background-color: rgba(255, 255, 255, 0.457);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 200;
+}
+
+#cardEnquete{
+    background: linear-gradient(90deg, var(--publi-enquete) 31%, var(--publi-enquete1) 92%);
+    height: 90%;
+    width: 70%;
+    display: block;
+    border-radius: 30px;
+}
+
+.contentEnquete{
+    margin-top: 30px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.enqueteBox{
+    height: 65px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.apagaEn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 65px;
+    width: 55px;
+    color: white;
+    font-size: 2em;
+    background-color: red;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleEnquete{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagBox{
+    height: 15%;
+    font-size: 1.3em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: var(--letra-g);
+}
+
+.titleEnqueteBox{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid .5px var(--letra);
+    background-color: transparent;
+    font-size: 3em;
+    height: 100%;
+    width: 70%;
+    color: var(--letra);
+}
+
+#cancelaEnquete{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 93%;
+    bottom: -20px;
+}
+
+.cancelIMG{
+    margin-bottom: -70px;
+    cursor: pointer;
+}
+
+#pronto{
+    cursor: pointer;
+    position: relative;
+    left: 38%;
+    bottom: 5%;
+    
+    font-weight: bold;
+    font-size: 2.3em;
+    color: var(--letra);
+}
+
+.mais{
+    cursor: pointer;
+    margin-top: 13px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
+
+@media(orientation: portrait){
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .tagBox{
+        margin-top: 2%;
+    }
+    .contentEnquete span{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentEnquete{
+        margin-top: 23%;
+        height: 50%;
+        gap: 8%;
+    }
+
+    #cardEnquete{
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        border-radius: 0;
+    }
+    #cancelaEnquete{
+        height: 35px;
+        width: 35px;
+        margin-left: 2%;
+        margin-top: 3%;
+        position: relative;
+        left: calc(100% - 70px);
+        bottom: 5px;
+    }
+
+    .enqueteBox{
+        height: 60px;
+        width: 75%;
+    }
+    
+    .apagaEn{
+        height: 60px;
+        width: 45px;
+    }
+
+    #pronto{
+        left: 0;
+        top: 30px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait){
+    /* Estilos para tablets e dispositivos em modo paisagem */
+    .enqueteBox{
+        height: 60px;
+        width: 400px;
+    }
+    .contentEnquete{
+        margin-top: 15%;
+        height: 50%;
+        gap: 10%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) and (orientation: portrait){
+    /* Estilos para tablets e dispositivos em modo paisagem */
+    .enqueteBox{
+        height: 60px;
+        width: 450px;
+    }
+    .contentEnquete{
+        margin-top: 15%;
+        height: 50%;
+        gap: 10%;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait){
+    .enqueteBox{
+        height: 60px;
+        width: 520px;
+    }
+    .contentEnquete{
+        margin-top: 10%;
+        height: 50%;
+        gap: 15%;
+    }
+}
+
+@media (max-width: 577px) and (orientation: landscape){
+    #cardEnquete{
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        border-radius: 0;
+    }
+    #cancelaEnquete{
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        left: calc(100% - 70px);
+        bottom: 5px;
+    }
+
+    .enqueteBox{
+        height: 60px;
+        width: 70%;
+    }
+    
+    .apagaEn{
+        height: 60px;
+        width: 45px;
+    }
+
+    #pronto{
+        left: 50%;
+    }
+
+    .contentEnquete{
+        height: 70%;
+        display: grid;
+        grid-template-columns: calc(100vw / 4) calc(100vw / 4);
+        gap: 15px;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+ 
+    #cardEnquete{
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        border-radius: 0;
+    }
+    #cancelaEnquete{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        position: relative;
+        left: calc(100% - 70px);
+        bottom: 5px;
+    }
+
+    .enqueteBox{
+        height: 60px;
+        width: 70%;
+    }
+    
+    .apagaEn{
+        height: 60px;
+        width: 45px;
+    }
+
+    #pronto{
+        left: 60%;
+    }
+
+    .contentEnquete{
+        height: 70%;
+        display: grid;
+        grid-template-columns: calc(100vw / 4) calc(100vw / 4);
+        gap: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+
+    #cardEnquete{
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        border-radius: 0;
+    }
+    #cancelaEnquete{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        position: relative;
+        left: calc(100% - 70px);
+        bottom: 5px;
+    }
+
+    .enqueteBox{
+        height: 60px;
+        width: 70%;
+    }
+    
+    .apagaEn{
+        height: 60px;
+        width: 45px;
+    }
+
+    #pronto{
+        left: 70%;
+        top: 20px;
+    }
+
+    .contentEnquete{
+        height: 60%;
+        display: grid;
+        grid-template-columns: calc(100vw / 4) calc(100vw / 4);
+        gap: 15px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape){
+    #cancelaEnquete{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        position: relative;
+        left: calc(100% - 70px);
+        bottom: 5px;
+    }
+
+    .enqueteBox{
+        height: 60px;
+        width: 70%;
+    }
+    
+    .apagaEn{
+        height: 60px;
+        width: 45px;
+    }
+
+    #pronto{
+        position: static;
+        top: 20px;
+    }
+    .contentEnquete{
+        margin-top: 30px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+    }
+
+    .apagaEn{
+        height: 100%;
+        width: 5vw;
+    }
+    .enqueteBox{
+        height: 60px;
+        width: 45vw;
+    }
+}

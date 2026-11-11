@@ -1,0 +1,20 @@
+{
+    "en": {
+        "seguir": "FOLLOW",
+        "seguindo": "FOLLOWING",
+        "generos": "FAVORITE GENRES",
+        "livros": "BOOKS"
+    },
+    "pt": {
+        "seguir": "SEGUIR",
+        "seguindo": "SEGUINDO",
+        "generos": "GÊNEROS FAVORITOS",
+        "livros": "LIVROS"
+    },
+    "es": {
+        "seguir": "SEGUINDO",
+        "seguindo": "SEGUIENTE",
+        "generos": "GÉNEROS FAVORITOS",
+        "livros": "LIBROS"
+    }
+}

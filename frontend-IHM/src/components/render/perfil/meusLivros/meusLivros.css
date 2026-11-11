@@ -1,0 +1,185 @@
+.boxCardMeusLivro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: calc(100vw - 10px);
+}
+
+.titleMeusLivros {
+    font-size: 2em;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.linha {
+    margin-bottom: 50px;
+    max-width: 100%;
+    min-height: 300px;
+}
+
+.linha .coluna {
+    margin-right: 40px;
+}
+
+#margem {
+    min-height: 10px;
+    min-width: 40px;
+}
+
+@media (max-width: 576px) and (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
+
+    /* Estilos para dispositivos com largura entre 577px e 768px (ex: smartphones em modo paisagem e tablets) */
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 400px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 300px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .boxCardMeusLivro #titlePerfil{
+        display: none;
+    }
+
+    /* Estilos para tablets maiores e dispositivos em modo paisagem */
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media (hover: none) and (min-width: 1201px)  {
+
+    /* Estilos para dispositivos desktop (telas maiores) */
+    .boxCardMeusLivro #titlePerfil{
+        display: none;
+    }
+    .boxCardMeusLivro {
+        display: block;
+        height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .linha {
+        display: block;
+        margin-bottom: 50px;
+        max-width: 100%;
+        min-height: 100px;
+    }
+}
+
+@media (orientation: portrait) {}
+
+@media (orientation: landscape) {
+
+    /* Estilos para dispositivos em modo paisagem */
+    .boxCardMeusLivro {
+        width: 100%;
+    }
+}

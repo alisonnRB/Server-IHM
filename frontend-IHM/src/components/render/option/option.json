@@ -1,0 +1,50 @@
+{
+    "en": {
+        "title": "SETTINGS",
+        "idioma": "LANGUAGE",
+        "pt": "PORTUGUESE",
+        "en": "ENGLISH",
+        "es": "SPANISH",
+        "tema": "THEME",
+        "alterar": "CHANGE PASSWORD",
+        "atual": "CURENT PASSWORD",
+        "nova": "NEW PASSWORD",
+        "confirma": "CONFIRM PASSWORD",
+        "pronto": "READY",
+        "conta": "ACCOUNT",
+        "sair": "LOGGOUT",
+        "excluir": "DELETE"
+    },
+    "pt": {
+        "title": "CONFIGURAÇÕES",
+        "idioma": "IDIOMA",
+        "pt": "PORTUGUÊS",
+        "en": "INGLÊS",
+        "es": "ESPANHOL",
+        "tema": "TEMA",
+        "alterar": "ALTERAR SENHA",
+        "atual": "SENHA ATUAL",
+        "nova": "NOVA SENHA",
+        "confirma": "CONFIRMAR SENHA",
+        "pronto": "PRONTO",
+        "conta": "CONTA",
+        "sair": "SAIR",
+        "excluir": "EXCLUIR"
+    },
+    "es": {
+        "title": "AJUSTES",
+        "idioma": "IDIOMA",
+        "pt": "PORTUGUÉS",
+        "en": "INGLÉS",
+        "es": "ESPAÑOL",
+        "tema": "TEMA",
+        "alterar": "CAMBIAR CONTRASEÑA",
+        "atual": "CONTRASEÑA ACTUAL",
+        "nova": "NUEVA CONTRASEÑA",
+        "confirma": "CONFIRMAR SEÑA",
+        "pronto": "LISTO",
+        "conta": "CUENTA",
+        "sair": "SALIR",
+        "excluir": "ELIMINAR"
+    }
+}

@@ -1,0 +1,175 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.renderPosts {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 600px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10%;
+
+}
+
+.btPost {
+    font-size: 3em;
+    position: fixed;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    right: 20px;
+    bottom: 20px;
+}
+
+.disparador {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#notMore {
+    font-size: 5em;
+    word-break: break-all;
+    color: #BACFD1;
+}
+
+.btPBF{
+    width: 65%;
+    height: 40px;
+    border-radius: 10px;  
+    border: solid var(--FY) 2px ;
+
+    background-color: var(--background);
+    cursor: pointer;
+}
+
+.btPBF .btLF:first-child{
+    border-right: solid var(--FY) 2px;
+
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.btPBF .btLF:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btPBF .btLF{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--letra-FY);
+}
+
+.btPBF .btLF:hover{
+    background-color: #0b6e7d52;
+}
+
+.btLF.sets{
+    background-color: var(--FY);
+    color: white;
+}
+
+@media (orientation: portrait) {
+    .renderPosts {
+        width: 100%;
+        padding: 0;
+    }
+
+    .btPBF {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 576px) and (orientation: portrait) {
+    #notMore {
+        font-size: 1.5em;
+        word-break: break-all;
+        color: #BACFD1;
+        position: relative;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
+    .renderPosts {
+        padding: 0;
+    }
+
+    .renderPosts .titlePerfil {
+        display: none;
+    }
+}
+
+
+@media (min-width: 993px) and (max-width: 1000px) and (orientation: landscape) {
+    .renderPosts {
+        padding: 0;
+    }
+
+    .feed #titlePerfil {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1001px) and (max-width: 1200px) and (orientation: landscape) {
+    .renderPosts {
+        padding: 0;
+    }
+
+    .feed #titlePerfil {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) and (orientation: landscape) {
+    .renderPosts {
+        padding: 0;
+    }
+
+    .feed #titlePerfil {
+        display: none;
+    }
+}
+
+@media (min-width: 1201px) {
+    .feed #titlePerfil {
+        display: inherit;
+    }
+}
+
+@media (min-width: 1900px) {
+
+    /*estilo pra computadores com até 2560px*/
+    #notMore {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+    .feed .content-notifica {
+        right: 21px;
+        margin-top: 5px;
+    }
+    .selectBox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) and (orientation: portrait) {
+    #notMore {
+        font-size: 3.5em;
+    }
+}

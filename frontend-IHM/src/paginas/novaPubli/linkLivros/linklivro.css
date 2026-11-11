@@ -1,0 +1,144 @@
+.BuscaLivros{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.457);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.abaPesquisa{
+    height: 90%;
+    width: 70%;
+    border-radius: 30px;
+    display: block;
+    background: linear-gradient(90deg, var(--publi-enquete) 31%, var(--publi-enquete1) 92%);
+}
+
+.abaPesquisa #searchText{
+    border-radius: 50px;
+    background-color: var(--box-publi-livro);
+    width: 83%;
+}
+.abaPesquisa .titleBox{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--letra-g);
+}
+
+.BuscaLivros .boxLivros {
+    margin-top: 0;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.BuscaLivros #searchImg{
+    width: 60px;
+}
+
+.Buscas{
+    height: calc(90% - 90px);
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cancelB{
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -80px;
+    left: 93%;
+    bottom: 10px;
+}
+
+@media (orientation: portrait) {
+    /* Estilos para dispositivos com largura máxima de 576px (ex: smartphones em modo retrato) */
+    .abaPesquisa{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+    
+    #cancelB{
+        left: calc(100% - 70px);
+        bottom: 35px;
+        height: 30px;
+        width: 30px;
+    }
+
+
+    .CardLink .content .caixaInfo .boxNome {    
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 577px) and (orientation: landscape){
+    .abaPesquisa{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+    #cancelB{
+        margin-bottom: -80px;
+        left: calc(100% - 70px);
+        bottom: 20px;
+        height: 70px;
+        width: 70px;
+    }
+    #cancelB{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+    .abaPesquisa{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+    #cancelB{
+        margin-bottom: -80px;
+        left: calc(100% - 70px);
+        bottom: 20px;
+        height: 70px;
+        width: 70px;
+    }
+    #cancelB{
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    .abaPesquisa{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+    #cancelB{
+        margin-bottom: -80px;
+        left: calc(100% - 70px);
+        bottom: 20px;
+        height: 70px;
+        width: 70px;
+    }
+    #cancelB{
+        height: 40px;
+        width: 40px;
+    }
+}
